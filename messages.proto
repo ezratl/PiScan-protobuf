@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "request.proto";
+import "context.proto";
+
+message ClientToServer {
+	enum Type {
+		GENERAL_REQUEST = 0;
+		SCANNER_STATE_REQUEST = 1;
+		DEMOD_REQUEST = 2;
+	}
+
+	Type type = 1;
+	GeneralRequest generalRequest = 2;
+	ScannerStateRequest scanStateRequest = 3;
+	DemodRequest demodRequest = 4;
+}
+
+message ServerToClient {
+	enum Type {
+		SCANNER_CONTEXT = 0;
+		DEMOD_CONTEXT = 1;
+		GENERAL_MESSAGE = 2;
+	}
+
+	Type type = 1;
+	ScannerContext scannerContext = 2;
+	DemodContext demodContext = 3;
+	GeneralMessage generalMessage = 4;
+}
+

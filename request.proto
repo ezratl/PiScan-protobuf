@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+message GeneralRequest {
+	int32 handle = 1;
+
+	enum RequestType {
+		SCANNER_CONTEXT = 0;
+		DEMOD_CONTEXT = 1;
+	}
+
+	RequestType type = 2;
+}
+
+message ScannerStateRequest {
+	int32 handle = 1;
+
+	enum NewState {
+		SCAN = 0;
+		HOLD = 1;
+		MANUAL = 2;
+	}
+
+	NewState state = 2;
+	uint64 manFreq = 3;
+}
+
+message DemodRequest {
+	int32 handle = 1;
+
+	enum DemodFunc {
+		SET_SQUELCH = 0;
+		SET_GAIN = 1;
+	}
+
+	float level = 2;
+}

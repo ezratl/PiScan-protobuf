@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+message ScannerContext {
+	enum State {
+		INVAL = 0;
+		SCAN = 1;
+		HOLD = 2;
+		RECEIVE = 3;
+	}
+	
+	State state = 1;
+	uint64 freq = 2;
+	string systemTag = 3;
+	string entryTag = 4;
+	string modulation = 5;
+	string entryIndex = 6;
+}
+
+message DemodContext {
+	int32 squelch = 1;
+	float gain = 2;
+}
+
+message GeneralMessage {
+	enum Type {
+		INFO = 0;
+		WARNING = 1;
+		ERROR = 2;
+	}
+
+	Type type = 1;
+	string content = 2;
+}
