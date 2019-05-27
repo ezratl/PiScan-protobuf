@@ -54,6 +54,7 @@ struct TableStruct_context_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 void AddDescriptors_context_2eproto();
+namespace piscan_pb {
 class DemodContext;
 class DemodContextDefaultTypeInternal;
 extern DemodContextDefaultTypeInternal _DemodContext_default_instance_;
@@ -63,11 +64,13 @@ extern GeneralMessageDefaultTypeInternal _GeneralMessage_default_instance_;
 class ScannerContext;
 class ScannerContextDefaultTypeInternal;
 extern ScannerContextDefaultTypeInternal _ScannerContext_default_instance_;
+}  // namespace piscan_pb
 PROTOBUF_NAMESPACE_OPEN
-template<> ::DemodContext* Arena::CreateMaybeMessage<::DemodContext>(Arena*);
-template<> ::GeneralMessage* Arena::CreateMaybeMessage<::GeneralMessage>(Arena*);
-template<> ::ScannerContext* Arena::CreateMaybeMessage<::ScannerContext>(Arena*);
+template<> ::piscan_pb::DemodContext* Arena::CreateMaybeMessage<::piscan_pb::DemodContext>(Arena*);
+template<> ::piscan_pb::GeneralMessage* Arena::CreateMaybeMessage<::piscan_pb::GeneralMessage>(Arena*);
+template<> ::piscan_pb::ScannerContext* Arena::CreateMaybeMessage<::piscan_pb::ScannerContext>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
+namespace piscan_pb {
 
 enum ScannerContext_State {
   ScannerContext_State_INVAL = 0,
@@ -117,7 +120,7 @@ inline bool GeneralMessage_Type_Parse(
 // ===================================================================
 
 class ScannerContext final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ScannerContext) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.ScannerContext) */ {
  public:
   ScannerContext();
   virtual ~ScannerContext();
@@ -195,7 +198,7 @@ class ScannerContext final :
   void InternalSwap(ScannerContext* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "ScannerContext";
+    return "piscan_pb.ScannerContext";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -296,13 +299,13 @@ class ScannerContext final :
   ::PROTOBUF_NAMESPACE_ID::uint64 freq() const;
   void set_freq(::PROTOBUF_NAMESPACE_ID::uint64 value);
 
-  // .ScannerContext.State state = 1;
+  // .piscan_pb.ScannerContext.State state = 1;
   void clear_state();
   static const int kStateFieldNumber = 1;
-  ::ScannerContext_State state() const;
-  void set_state(::ScannerContext_State value);
+  ::piscan_pb::ScannerContext_State state() const;
+  void set_state(::piscan_pb::ScannerContext_State value);
 
-  // @@protoc_insertion_point(class_scope:ScannerContext)
+  // @@protoc_insertion_point(class_scope:piscan_pb.ScannerContext)
  private:
   class HasBitSetters;
 
@@ -319,7 +322,7 @@ class ScannerContext final :
 // -------------------------------------------------------------------
 
 class DemodContext final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:DemodContext) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.DemodContext) */ {
  public:
   DemodContext();
   virtual ~DemodContext();
@@ -397,7 +400,7 @@ class DemodContext final :
   void InternalSwap(DemodContext* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "DemodContext";
+    return "piscan_pb.DemodContext";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -426,7 +429,7 @@ class DemodContext final :
   float gain() const;
   void set_gain(float value);
 
-  // @@protoc_insertion_point(class_scope:DemodContext)
+  // @@protoc_insertion_point(class_scope:piscan_pb.DemodContext)
  private:
   class HasBitSetters;
 
@@ -439,7 +442,7 @@ class DemodContext final :
 // -------------------------------------------------------------------
 
 class GeneralMessage final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GeneralMessage) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.GeneralMessage) */ {
  public:
   GeneralMessage();
   virtual ~GeneralMessage();
@@ -517,7 +520,7 @@ class GeneralMessage final :
   void InternalSwap(GeneralMessage* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "GeneralMessage";
+    return "piscan_pb.GeneralMessage";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -574,13 +577,13 @@ class GeneralMessage final :
   std::string* release_content();
   void set_allocated_content(std::string* content);
 
-  // .GeneralMessage.Type type = 1;
+  // .piscan_pb.GeneralMessage.Type type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
-  ::GeneralMessage_Type type() const;
-  void set_type(::GeneralMessage_Type value);
+  ::piscan_pb::GeneralMessage_Type type() const;
+  void set_type(::piscan_pb::GeneralMessage_Type value);
 
-  // @@protoc_insertion_point(class_scope:GeneralMessage)
+  // @@protoc_insertion_point(class_scope:piscan_pb.GeneralMessage)
  private:
   class HasBitSetters;
 
@@ -601,18 +604,18 @@ class GeneralMessage final :
 #endif  // __GNUC__
 // ScannerContext
 
-// .ScannerContext.State state = 1;
+// .piscan_pb.ScannerContext.State state = 1;
 inline void ScannerContext::clear_state() {
   state_ = 0;
 }
-inline ::ScannerContext_State ScannerContext::state() const {
-  // @@protoc_insertion_point(field_get:ScannerContext.state)
-  return static_cast< ::ScannerContext_State >(state_);
+inline ::piscan_pb::ScannerContext_State ScannerContext::state() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerContext.state)
+  return static_cast< ::piscan_pb::ScannerContext_State >(state_);
 }
-inline void ScannerContext::set_state(::ScannerContext_State value) {
+inline void ScannerContext::set_state(::piscan_pb::ScannerContext_State value) {
   
   state_ = value;
-  // @@protoc_insertion_point(field_set:ScannerContext.state)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerContext.state)
 }
 
 // uint64 freq = 2;
@@ -620,13 +623,13 @@ inline void ScannerContext::clear_freq() {
   freq_ = PROTOBUF_ULONGLONG(0);
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint64 ScannerContext::freq() const {
-  // @@protoc_insertion_point(field_get:ScannerContext.freq)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerContext.freq)
   return freq_;
 }
 inline void ScannerContext::set_freq(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   
   freq_ = value;
-  // @@protoc_insertion_point(field_set:ScannerContext.freq)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerContext.freq)
 }
 
 // string systemTag = 3;
@@ -634,39 +637,39 @@ inline void ScannerContext::clear_systemtag() {
   systemtag_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline const std::string& ScannerContext::systemtag() const {
-  // @@protoc_insertion_point(field_get:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerContext.systemTag)
   return systemtag_.GetNoArena();
 }
 inline void ScannerContext::set_systemtag(const std::string& value) {
   
   systemtag_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerContext.systemTag)
 }
 inline void ScannerContext::set_systemtag(std::string&& value) {
   
   systemtag_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_set_rvalue:piscan_pb.ScannerContext.systemTag)
 }
 inline void ScannerContext::set_systemtag(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   systemtag_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_set_char:piscan_pb.ScannerContext.systemTag)
 }
 inline void ScannerContext::set_systemtag(const char* value, size_t size) {
   
   systemtag_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_set_pointer:piscan_pb.ScannerContext.systemTag)
 }
 inline std::string* ScannerContext::mutable_systemtag() {
   
-  // @@protoc_insertion_point(field_mutable:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ScannerContext.systemTag)
   return systemtag_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* ScannerContext::release_systemtag() {
-  // @@protoc_insertion_point(field_release:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_release:piscan_pb.ScannerContext.systemTag)
   
   return systemtag_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -677,7 +680,7 @@ inline void ScannerContext::set_allocated_systemtag(std::string* systemtag) {
     
   }
   systemtag_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), systemtag);
-  // @@protoc_insertion_point(field_set_allocated:ScannerContext.systemTag)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ScannerContext.systemTag)
 }
 
 // string entryTag = 4;
@@ -685,39 +688,39 @@ inline void ScannerContext::clear_entrytag() {
   entrytag_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline const std::string& ScannerContext::entrytag() const {
-  // @@protoc_insertion_point(field_get:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerContext.entryTag)
   return entrytag_.GetNoArena();
 }
 inline void ScannerContext::set_entrytag(const std::string& value) {
   
   entrytag_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerContext.entryTag)
 }
 inline void ScannerContext::set_entrytag(std::string&& value) {
   
   entrytag_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_set_rvalue:piscan_pb.ScannerContext.entryTag)
 }
 inline void ScannerContext::set_entrytag(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   entrytag_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_set_char:piscan_pb.ScannerContext.entryTag)
 }
 inline void ScannerContext::set_entrytag(const char* value, size_t size) {
   
   entrytag_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_set_pointer:piscan_pb.ScannerContext.entryTag)
 }
 inline std::string* ScannerContext::mutable_entrytag() {
   
-  // @@protoc_insertion_point(field_mutable:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ScannerContext.entryTag)
   return entrytag_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* ScannerContext::release_entrytag() {
-  // @@protoc_insertion_point(field_release:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_release:piscan_pb.ScannerContext.entryTag)
   
   return entrytag_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -728,7 +731,7 @@ inline void ScannerContext::set_allocated_entrytag(std::string* entrytag) {
     
   }
   entrytag_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), entrytag);
-  // @@protoc_insertion_point(field_set_allocated:ScannerContext.entryTag)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ScannerContext.entryTag)
 }
 
 // string modulation = 5;
@@ -736,39 +739,39 @@ inline void ScannerContext::clear_modulation() {
   modulation_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline const std::string& ScannerContext::modulation() const {
-  // @@protoc_insertion_point(field_get:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerContext.modulation)
   return modulation_.GetNoArena();
 }
 inline void ScannerContext::set_modulation(const std::string& value) {
   
   modulation_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerContext.modulation)
 }
 inline void ScannerContext::set_modulation(std::string&& value) {
   
   modulation_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_set_rvalue:piscan_pb.ScannerContext.modulation)
 }
 inline void ScannerContext::set_modulation(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   modulation_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_set_char:piscan_pb.ScannerContext.modulation)
 }
 inline void ScannerContext::set_modulation(const char* value, size_t size) {
   
   modulation_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_set_pointer:piscan_pb.ScannerContext.modulation)
 }
 inline std::string* ScannerContext::mutable_modulation() {
   
-  // @@protoc_insertion_point(field_mutable:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ScannerContext.modulation)
   return modulation_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* ScannerContext::release_modulation() {
-  // @@protoc_insertion_point(field_release:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_release:piscan_pb.ScannerContext.modulation)
   
   return modulation_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -779,7 +782,7 @@ inline void ScannerContext::set_allocated_modulation(std::string* modulation) {
     
   }
   modulation_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), modulation);
-  // @@protoc_insertion_point(field_set_allocated:ScannerContext.modulation)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ScannerContext.modulation)
 }
 
 // string entryIndex = 6;
@@ -787,39 +790,39 @@ inline void ScannerContext::clear_entryindex() {
   entryindex_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline const std::string& ScannerContext::entryindex() const {
-  // @@protoc_insertion_point(field_get:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerContext.entryIndex)
   return entryindex_.GetNoArena();
 }
 inline void ScannerContext::set_entryindex(const std::string& value) {
   
   entryindex_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerContext.entryIndex)
 }
 inline void ScannerContext::set_entryindex(std::string&& value) {
   
   entryindex_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_set_rvalue:piscan_pb.ScannerContext.entryIndex)
 }
 inline void ScannerContext::set_entryindex(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   entryindex_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_set_char:piscan_pb.ScannerContext.entryIndex)
 }
 inline void ScannerContext::set_entryindex(const char* value, size_t size) {
   
   entryindex_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_set_pointer:piscan_pb.ScannerContext.entryIndex)
 }
 inline std::string* ScannerContext::mutable_entryindex() {
   
-  // @@protoc_insertion_point(field_mutable:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ScannerContext.entryIndex)
   return entryindex_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* ScannerContext::release_entryindex() {
-  // @@protoc_insertion_point(field_release:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_release:piscan_pb.ScannerContext.entryIndex)
   
   return entryindex_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -830,7 +833,7 @@ inline void ScannerContext::set_allocated_entryindex(std::string* entryindex) {
     
   }
   entryindex_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), entryindex);
-  // @@protoc_insertion_point(field_set_allocated:ScannerContext.entryIndex)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ScannerContext.entryIndex)
 }
 
 // -------------------------------------------------------------------
@@ -842,13 +845,13 @@ inline void DemodContext::clear_squelch() {
   squelch_ = 0;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 DemodContext::squelch() const {
-  // @@protoc_insertion_point(field_get:DemodContext.squelch)
+  // @@protoc_insertion_point(field_get:piscan_pb.DemodContext.squelch)
   return squelch_;
 }
 inline void DemodContext::set_squelch(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   squelch_ = value;
-  // @@protoc_insertion_point(field_set:DemodContext.squelch)
+  // @@protoc_insertion_point(field_set:piscan_pb.DemodContext.squelch)
 }
 
 // float gain = 2;
@@ -856,31 +859,31 @@ inline void DemodContext::clear_gain() {
   gain_ = 0;
 }
 inline float DemodContext::gain() const {
-  // @@protoc_insertion_point(field_get:DemodContext.gain)
+  // @@protoc_insertion_point(field_get:piscan_pb.DemodContext.gain)
   return gain_;
 }
 inline void DemodContext::set_gain(float value) {
   
   gain_ = value;
-  // @@protoc_insertion_point(field_set:DemodContext.gain)
+  // @@protoc_insertion_point(field_set:piscan_pb.DemodContext.gain)
 }
 
 // -------------------------------------------------------------------
 
 // GeneralMessage
 
-// .GeneralMessage.Type type = 1;
+// .piscan_pb.GeneralMessage.Type type = 1;
 inline void GeneralMessage::clear_type() {
   type_ = 0;
 }
-inline ::GeneralMessage_Type GeneralMessage::type() const {
-  // @@protoc_insertion_point(field_get:GeneralMessage.type)
-  return static_cast< ::GeneralMessage_Type >(type_);
+inline ::piscan_pb::GeneralMessage_Type GeneralMessage::type() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.GeneralMessage.type)
+  return static_cast< ::piscan_pb::GeneralMessage_Type >(type_);
 }
-inline void GeneralMessage::set_type(::GeneralMessage_Type value) {
+inline void GeneralMessage::set_type(::piscan_pb::GeneralMessage_Type value) {
   
   type_ = value;
-  // @@protoc_insertion_point(field_set:GeneralMessage.type)
+  // @@protoc_insertion_point(field_set:piscan_pb.GeneralMessage.type)
 }
 
 // string content = 2;
@@ -888,39 +891,39 @@ inline void GeneralMessage::clear_content() {
   content_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline const std::string& GeneralMessage::content() const {
-  // @@protoc_insertion_point(field_get:GeneralMessage.content)
+  // @@protoc_insertion_point(field_get:piscan_pb.GeneralMessage.content)
   return content_.GetNoArena();
 }
 inline void GeneralMessage::set_content(const std::string& value) {
   
   content_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:GeneralMessage.content)
+  // @@protoc_insertion_point(field_set:piscan_pb.GeneralMessage.content)
 }
 inline void GeneralMessage::set_content(std::string&& value) {
   
   content_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:GeneralMessage.content)
+  // @@protoc_insertion_point(field_set_rvalue:piscan_pb.GeneralMessage.content)
 }
 inline void GeneralMessage::set_content(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   content_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:GeneralMessage.content)
+  // @@protoc_insertion_point(field_set_char:piscan_pb.GeneralMessage.content)
 }
 inline void GeneralMessage::set_content(const char* value, size_t size) {
   
   content_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:GeneralMessage.content)
+  // @@protoc_insertion_point(field_set_pointer:piscan_pb.GeneralMessage.content)
 }
 inline std::string* GeneralMessage::mutable_content() {
   
-  // @@protoc_insertion_point(field_mutable:GeneralMessage.content)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.GeneralMessage.content)
   return content_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 inline std::string* GeneralMessage::release_content() {
-  // @@protoc_insertion_point(field_release:GeneralMessage.content)
+  // @@protoc_insertion_point(field_release:piscan_pb.GeneralMessage.content)
   
   return content_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -931,7 +934,7 @@ inline void GeneralMessage::set_allocated_content(std::string* content) {
     
   }
   content_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), content);
-  // @@protoc_insertion_point(field_set_allocated:GeneralMessage.content)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.GeneralMessage.content)
 }
 
 #ifdef __GNUC__
@@ -944,18 +947,19 @@ inline void GeneralMessage::set_allocated_content(std::string* content) {
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace piscan_pb
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::ScannerContext_State> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::ScannerContext_State> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::ScannerContext_State>() {
-  return ::ScannerContext_State_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::ScannerContext_State>() {
+  return ::piscan_pb::ScannerContext_State_descriptor();
 }
-template <> struct is_proto_enum< ::GeneralMessage_Type> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::GeneralMessage_Type> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::GeneralMessage_Type>() {
-  return ::GeneralMessage_Type_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::GeneralMessage_Type>() {
+  return ::piscan_pb::GeneralMessage_Type_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

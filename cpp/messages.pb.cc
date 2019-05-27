@@ -22,6 +22,7 @@ extern PROTOBUF_INTERNAL_EXPORT_context_2eproto ::PROTOBUF_NAMESPACE_ID::interna
 extern PROTOBUF_INTERNAL_EXPORT_request_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DemodRequest_request_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_request_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GeneralRequest_request_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_request_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerStateRequest_request_2eproto;
+namespace piscan_pb {
 class ClientToServerDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ClientToServer> _instance;
@@ -30,15 +31,16 @@ class ServerToClientDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ServerToClient> _instance;
 } _ServerToClient_default_instance_;
+}  // namespace piscan_pb
 static void InitDefaultsClientToServer_messages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ClientToServer_default_instance_;
-    new (ptr) ::ClientToServer();
+    void* ptr = &::piscan_pb::_ClientToServer_default_instance_;
+    new (ptr) ::piscan_pb::ClientToServer();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ClientToServer::InitAsDefaultInstance();
+  ::piscan_pb::ClientToServer::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_ClientToServer_messages_2eproto =
@@ -51,11 +53,11 @@ static void InitDefaultsServerToClient_messages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ServerToClient_default_instance_;
-    new (ptr) ::ServerToClient();
+    void* ptr = &::piscan_pb::_ServerToClient_default_instance_;
+    new (ptr) ::piscan_pb::ServerToClient();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ServerToClient::InitAsDefaultInstance();
+  ::piscan_pb::ServerToClient::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_ServerToClient_messages_2eproto =
@@ -75,32 +77,32 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_messages_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ClientToServer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ClientToServer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ClientToServer, type_),
-  PROTOBUF_FIELD_OFFSET(::ClientToServer, generalrequest_),
-  PROTOBUF_FIELD_OFFSET(::ClientToServer, scanstaterequest_),
-  PROTOBUF_FIELD_OFFSET(::ClientToServer, demodrequest_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ClientToServer, type_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ClientToServer, generalrequest_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ClientToServer, scanstaterequest_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ClientToServer, demodrequest_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ServerToClient, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ServerToClient, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ServerToClient, type_),
-  PROTOBUF_FIELD_OFFSET(::ServerToClient, scannercontext_),
-  PROTOBUF_FIELD_OFFSET(::ServerToClient, demodcontext_),
-  PROTOBUF_FIELD_OFFSET(::ServerToClient, generalmessage_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ServerToClient, type_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ServerToClient, scannercontext_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ServerToClient, demodcontext_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ServerToClient, generalmessage_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::ClientToServer)},
-  { 9, -1, sizeof(::ServerToClient)},
+  { 0, -1, sizeof(::piscan_pb::ClientToServer)},
+  { 9, -1, sizeof(::piscan_pb::ServerToClient)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ClientToServer_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ServerToClient_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_ClientToServer_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_ServerToClient_default_instance_),
 };
 
 static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descriptors_table_messages_2eproto = {
@@ -110,25 +112,28 @@ static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descript
 };
 
 const char descriptor_table_protodef_messages_2eproto[] =
-  "\n\016messages.proto\032\rrequest.proto\032\rcontext"
-  ".proto\"\375\001\n\016ClientToServer\022\"\n\004type\030\001 \001(\0162"
-  "\024.ClientToServer.Type\022\'\n\016generalRequest\030"
-  "\002 \001(\0132\017.GeneralRequest\022.\n\020scanStateReque"
-  "st\030\003 \001(\0132\024.ScannerStateRequest\022#\n\014demodR"
-  "equest\030\004 \001(\0132\r.DemodRequest\"I\n\004Type\022\023\n\017G"
-  "ENERAL_REQUEST\020\000\022\031\n\025SCANNER_STATE_REQUES"
-  "T\020\001\022\021\n\rDEMOD_REQUEST\020\002\"\360\001\n\016ServerToClien"
-  "t\022\"\n\004type\030\001 \001(\0162\024.ServerToClient.Type\022\'\n"
-  "\016scannerContext\030\002 \001(\0132\017.ScannerContext\022#"
-  "\n\014demodContext\030\003 \001(\0132\r.DemodContext\022\'\n\016g"
-  "eneralMessage\030\004 \001(\0132\017.GeneralMessage\"C\n\004"
-  "Type\022\023\n\017SCANNER_CONTEXT\020\000\022\021\n\rDEMOD_CONTE"
-  "XT\020\001\022\023\n\017GENERAL_MESSAGE\020\002b\006proto3"
+  "\n\016messages.proto\022\tpiscan_pb\032\rrequest.pro"
+  "to\032\rcontext.proto\"\245\002\n\016ClientToServer\022,\n\004"
+  "type\030\001 \001(\0162\036.piscan_pb.ClientToServer.Ty"
+  "pe\0221\n\016generalRequest\030\002 \001(\0132\031.piscan_pb.G"
+  "eneralRequest\0228\n\020scanStateRequest\030\003 \001(\0132"
+  "\036.piscan_pb.ScannerStateRequest\022-\n\014demod"
+  "Request\030\004 \001(\0132\027.piscan_pb.DemodRequest\"I"
+  "\n\004Type\022\023\n\017GENERAL_REQUEST\020\000\022\031\n\025SCANNER_S"
+  "TATE_REQUEST\020\001\022\021\n\rDEMOD_REQUEST\020\002\"\230\002\n\016Se"
+  "rverToClient\022,\n\004type\030\001 \001(\0162\036.piscan_pb.S"
+  "erverToClient.Type\0221\n\016scannerContext\030\002 \001"
+  "(\0132\031.piscan_pb.ScannerContext\022-\n\014demodCo"
+  "ntext\030\003 \001(\0132\027.piscan_pb.DemodContext\0221\n\016"
+  "generalMessage\030\004 \001(\0132\031.piscan_pb.General"
+  "Message\"C\n\004Type\022\023\n\017SCANNER_CONTEXT\020\000\022\021\n\r"
+  "DEMOD_CONTEXT\020\001\022\023\n\017GENERAL_MESSAGE\020\002b\006pr"
+  "oto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messages_2eproto = {
   false, InitDefaults_messages_2eproto, 
   descriptor_table_protodef_messages_2eproto,
-  "messages.proto", &assign_descriptors_table_messages_2eproto, 553,
+  "messages.proto", &assign_descriptors_table_messages_2eproto, 644,
 };
 
 void AddDescriptors_messages_2eproto() {
@@ -142,6 +147,7 @@ void AddDescriptors_messages_2eproto() {
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_messages_2eproto = []() { AddDescriptors_messages_2eproto(); return true; }();
+namespace piscan_pb {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ClientToServer_Type_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_messages_2eproto);
   return file_level_enum_descriptors_messages_2eproto[0];
@@ -192,29 +198,29 @@ constexpr int ServerToClient::Type_ARRAYSIZE;
 // ===================================================================
 
 void ClientToServer::InitAsDefaultInstance() {
-  ::_ClientToServer_default_instance_._instance.get_mutable()->generalrequest_ = const_cast< ::GeneralRequest*>(
-      ::GeneralRequest::internal_default_instance());
-  ::_ClientToServer_default_instance_._instance.get_mutable()->scanstaterequest_ = const_cast< ::ScannerStateRequest*>(
-      ::ScannerStateRequest::internal_default_instance());
-  ::_ClientToServer_default_instance_._instance.get_mutable()->demodrequest_ = const_cast< ::DemodRequest*>(
-      ::DemodRequest::internal_default_instance());
+  ::piscan_pb::_ClientToServer_default_instance_._instance.get_mutable()->generalrequest_ = const_cast< ::piscan_pb::GeneralRequest*>(
+      ::piscan_pb::GeneralRequest::internal_default_instance());
+  ::piscan_pb::_ClientToServer_default_instance_._instance.get_mutable()->scanstaterequest_ = const_cast< ::piscan_pb::ScannerStateRequest*>(
+      ::piscan_pb::ScannerStateRequest::internal_default_instance());
+  ::piscan_pb::_ClientToServer_default_instance_._instance.get_mutable()->demodrequest_ = const_cast< ::piscan_pb::DemodRequest*>(
+      ::piscan_pb::DemodRequest::internal_default_instance());
 }
 class ClientToServer::HasBitSetters {
  public:
-  static const ::GeneralRequest& generalrequest(const ClientToServer* msg);
-  static const ::ScannerStateRequest& scanstaterequest(const ClientToServer* msg);
-  static const ::DemodRequest& demodrequest(const ClientToServer* msg);
+  static const ::piscan_pb::GeneralRequest& generalrequest(const ClientToServer* msg);
+  static const ::piscan_pb::ScannerStateRequest& scanstaterequest(const ClientToServer* msg);
+  static const ::piscan_pb::DemodRequest& demodrequest(const ClientToServer* msg);
 };
 
-const ::GeneralRequest&
+const ::piscan_pb::GeneralRequest&
 ClientToServer::HasBitSetters::generalrequest(const ClientToServer* msg) {
   return *msg->generalrequest_;
 }
-const ::ScannerStateRequest&
+const ::piscan_pb::ScannerStateRequest&
 ClientToServer::HasBitSetters::scanstaterequest(const ClientToServer* msg) {
   return *msg->scanstaterequest_;
 }
-const ::DemodRequest&
+const ::piscan_pb::DemodRequest&
 ClientToServer::HasBitSetters::demodrequest(const ClientToServer* msg) {
   return *msg->demodrequest_;
 }
@@ -246,29 +252,29 @@ const int ClientToServer::kDemodRequestFieldNumber;
 ClientToServer::ClientToServer()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ClientToServer)
+  // @@protoc_insertion_point(constructor:piscan_pb.ClientToServer)
 }
 ClientToServer::ClientToServer(const ClientToServer& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_generalrequest()) {
-    generalrequest_ = new ::GeneralRequest(*from.generalrequest_);
+    generalrequest_ = new ::piscan_pb::GeneralRequest(*from.generalrequest_);
   } else {
     generalrequest_ = nullptr;
   }
   if (from.has_scanstaterequest()) {
-    scanstaterequest_ = new ::ScannerStateRequest(*from.scanstaterequest_);
+    scanstaterequest_ = new ::piscan_pb::ScannerStateRequest(*from.scanstaterequest_);
   } else {
     scanstaterequest_ = nullptr;
   }
   if (from.has_demodrequest()) {
-    demodrequest_ = new ::DemodRequest(*from.demodrequest_);
+    demodrequest_ = new ::piscan_pb::DemodRequest(*from.demodrequest_);
   } else {
     demodrequest_ = nullptr;
   }
   type_ = from.type_;
-  // @@protoc_insertion_point(copy_constructor:ClientToServer)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.ClientToServer)
 }
 
 void ClientToServer::SharedCtor() {
@@ -280,7 +286,7 @@ void ClientToServer::SharedCtor() {
 }
 
 ClientToServer::~ClientToServer() {
-  // @@protoc_insertion_point(destructor:ClientToServer)
+  // @@protoc_insertion_point(destructor:piscan_pb.ClientToServer)
   SharedDtor();
 }
 
@@ -300,7 +306,7 @@ const ClientToServer& ClientToServer::default_instance() {
 
 
 void ClientToServer::Clear() {
-// @@protoc_insertion_point(message_clear_start:ClientToServer)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.ClientToServer)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -328,29 +334,29 @@ const char* ClientToServer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .ClientToServer.Type type = 1;
+      // .piscan_pb.ClientToServer.Type type = 1;
       case 1: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
         ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        set_type(static_cast<::ClientToServer_Type>(val));
+        set_type(static_cast<::piscan_pb::ClientToServer_Type>(val));
         break;
       }
-      // .GeneralRequest generalRequest = 2;
+      // .piscan_pb.GeneralRequest generalRequest = 2;
       case 2: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
         ptr = ctx->ParseMessage(mutable_generalrequest(), ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .ScannerStateRequest scanStateRequest = 3;
+      // .piscan_pb.ScannerStateRequest scanStateRequest = 3;
       case 3: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 26) goto handle_unusual;
         ptr = ctx->ParseMessage(mutable_scanstaterequest(), ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .DemodRequest demodRequest = 4;
+      // .piscan_pb.DemodRequest demodRequest = 4;
       case 4: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 34) goto handle_unusual;
         ptr = ctx->ParseMessage(mutable_demodrequest(), ptr);
@@ -376,27 +382,27 @@ bool ClientToServer::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ClientToServer)
+  // @@protoc_insertion_point(parse_start:piscan_pb.ClientToServer)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .ClientToServer.Type type = 1;
+      // .piscan_pb.ClientToServer.Type type = 1;
       case 1: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
           int value = 0;
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_type(static_cast< ::ClientToServer_Type >(value));
+          set_type(static_cast< ::piscan_pb::ClientToServer_Type >(value));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // .GeneralRequest generalRequest = 2;
+      // .piscan_pb.GeneralRequest generalRequest = 2;
       case 2: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
@@ -407,7 +413,7 @@ bool ClientToServer::MergePartialFromCodedStream(
         break;
       }
 
-      // .ScannerStateRequest scanStateRequest = 3;
+      // .piscan_pb.ScannerStateRequest scanStateRequest = 3;
       case 3: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
@@ -418,7 +424,7 @@ bool ClientToServer::MergePartialFromCodedStream(
         break;
       }
 
-      // .DemodRequest demodRequest = 4;
+      // .piscan_pb.DemodRequest demodRequest = 4;
       case 4: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
@@ -441,10 +447,10 @@ bool ClientToServer::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:ClientToServer)
+  // @@protoc_insertion_point(parse_success:piscan_pb.ClientToServer)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:ClientToServer)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.ClientToServer)
   return false;
 #undef DO_
 }
@@ -452,29 +458,29 @@ failure:
 
 void ClientToServer::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ClientToServer)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.ClientToServer)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ClientToServer.Type type = 1;
+  // .piscan_pb.ClientToServer.Type type = 1;
   if (this->type() != 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
   }
 
-  // .GeneralRequest generalRequest = 2;
+  // .piscan_pb.GeneralRequest generalRequest = 2;
   if (this->has_generalrequest()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::generalrequest(this), output);
   }
 
-  // .ScannerStateRequest scanStateRequest = 3;
+  // .piscan_pb.ScannerStateRequest scanStateRequest = 3;
   if (this->has_scanstaterequest()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::scanstaterequest(this), output);
   }
 
-  // .DemodRequest demodRequest = 4;
+  // .piscan_pb.DemodRequest demodRequest = 4;
   if (this->has_demodrequest()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, HasBitSetters::demodrequest(this), output);
@@ -484,36 +490,36 @@ void ClientToServer::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:ClientToServer)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.ClientToServer)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* ClientToServer::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ClientToServer)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.ClientToServer)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ClientToServer.Type type = 1;
+  // .piscan_pb.ClientToServer.Type type = 1;
   if (this->type() != 0) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->type(), target);
   }
 
-  // .GeneralRequest generalRequest = 2;
+  // .piscan_pb.GeneralRequest generalRequest = 2;
   if (this->has_generalrequest()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
         2, HasBitSetters::generalrequest(this), target);
   }
 
-  // .ScannerStateRequest scanStateRequest = 3;
+  // .piscan_pb.ScannerStateRequest scanStateRequest = 3;
   if (this->has_scanstaterequest()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, HasBitSetters::scanstaterequest(this), target);
   }
 
-  // .DemodRequest demodRequest = 4;
+  // .piscan_pb.DemodRequest demodRequest = 4;
   if (this->has_demodrequest()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -524,12 +530,12 @@ void ClientToServer::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:ClientToServer)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.ClientToServer)
   return target;
 }
 
 size_t ClientToServer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ClientToServer)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.ClientToServer)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -541,28 +547,28 @@ size_t ClientToServer::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .GeneralRequest generalRequest = 2;
+  // .piscan_pb.GeneralRequest generalRequest = 2;
   if (this->has_generalrequest()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *generalrequest_);
   }
 
-  // .ScannerStateRequest scanStateRequest = 3;
+  // .piscan_pb.ScannerStateRequest scanStateRequest = 3;
   if (this->has_scanstaterequest()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *scanstaterequest_);
   }
 
-  // .DemodRequest demodRequest = 4;
+  // .piscan_pb.DemodRequest demodRequest = 4;
   if (this->has_demodrequest()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *demodrequest_);
   }
 
-  // .ClientToServer.Type type = 1;
+  // .piscan_pb.ClientToServer.Type type = 1;
   if (this->type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->type());
@@ -574,35 +580,35 @@ size_t ClientToServer::ByteSizeLong() const {
 }
 
 void ClientToServer::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ClientToServer)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.ClientToServer)
   GOOGLE_DCHECK_NE(&from, this);
   const ClientToServer* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ClientToServer>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ClientToServer)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.ClientToServer)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ClientToServer)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.ClientToServer)
     MergeFrom(*source);
   }
 }
 
 void ClientToServer::MergeFrom(const ClientToServer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ClientToServer)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.ClientToServer)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_generalrequest()) {
-    mutable_generalrequest()->::GeneralRequest::MergeFrom(from.generalrequest());
+    mutable_generalrequest()->::piscan_pb::GeneralRequest::MergeFrom(from.generalrequest());
   }
   if (from.has_scanstaterequest()) {
-    mutable_scanstaterequest()->::ScannerStateRequest::MergeFrom(from.scanstaterequest());
+    mutable_scanstaterequest()->::piscan_pb::ScannerStateRequest::MergeFrom(from.scanstaterequest());
   }
   if (from.has_demodrequest()) {
-    mutable_demodrequest()->::DemodRequest::MergeFrom(from.demodrequest());
+    mutable_demodrequest()->::piscan_pb::DemodRequest::MergeFrom(from.demodrequest());
   }
   if (from.type() != 0) {
     set_type(from.type());
@@ -610,14 +616,14 @@ void ClientToServer::MergeFrom(const ClientToServer& from) {
 }
 
 void ClientToServer::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ClientToServer)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.ClientToServer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void ClientToServer::CopyFrom(const ClientToServer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ClientToServer)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.ClientToServer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -649,29 +655,29 @@ void ClientToServer::InternalSwap(ClientToServer* other) {
 // ===================================================================
 
 void ServerToClient::InitAsDefaultInstance() {
-  ::_ServerToClient_default_instance_._instance.get_mutable()->scannercontext_ = const_cast< ::ScannerContext*>(
-      ::ScannerContext::internal_default_instance());
-  ::_ServerToClient_default_instance_._instance.get_mutable()->demodcontext_ = const_cast< ::DemodContext*>(
-      ::DemodContext::internal_default_instance());
-  ::_ServerToClient_default_instance_._instance.get_mutable()->generalmessage_ = const_cast< ::GeneralMessage*>(
-      ::GeneralMessage::internal_default_instance());
+  ::piscan_pb::_ServerToClient_default_instance_._instance.get_mutable()->scannercontext_ = const_cast< ::piscan_pb::ScannerContext*>(
+      ::piscan_pb::ScannerContext::internal_default_instance());
+  ::piscan_pb::_ServerToClient_default_instance_._instance.get_mutable()->demodcontext_ = const_cast< ::piscan_pb::DemodContext*>(
+      ::piscan_pb::DemodContext::internal_default_instance());
+  ::piscan_pb::_ServerToClient_default_instance_._instance.get_mutable()->generalmessage_ = const_cast< ::piscan_pb::GeneralMessage*>(
+      ::piscan_pb::GeneralMessage::internal_default_instance());
 }
 class ServerToClient::HasBitSetters {
  public:
-  static const ::ScannerContext& scannercontext(const ServerToClient* msg);
-  static const ::DemodContext& demodcontext(const ServerToClient* msg);
-  static const ::GeneralMessage& generalmessage(const ServerToClient* msg);
+  static const ::piscan_pb::ScannerContext& scannercontext(const ServerToClient* msg);
+  static const ::piscan_pb::DemodContext& demodcontext(const ServerToClient* msg);
+  static const ::piscan_pb::GeneralMessage& generalmessage(const ServerToClient* msg);
 };
 
-const ::ScannerContext&
+const ::piscan_pb::ScannerContext&
 ServerToClient::HasBitSetters::scannercontext(const ServerToClient* msg) {
   return *msg->scannercontext_;
 }
-const ::DemodContext&
+const ::piscan_pb::DemodContext&
 ServerToClient::HasBitSetters::demodcontext(const ServerToClient* msg) {
   return *msg->demodcontext_;
 }
-const ::GeneralMessage&
+const ::piscan_pb::GeneralMessage&
 ServerToClient::HasBitSetters::generalmessage(const ServerToClient* msg) {
   return *msg->generalmessage_;
 }
@@ -703,29 +709,29 @@ const int ServerToClient::kGeneralMessageFieldNumber;
 ServerToClient::ServerToClient()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ServerToClient)
+  // @@protoc_insertion_point(constructor:piscan_pb.ServerToClient)
 }
 ServerToClient::ServerToClient(const ServerToClient& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_scannercontext()) {
-    scannercontext_ = new ::ScannerContext(*from.scannercontext_);
+    scannercontext_ = new ::piscan_pb::ScannerContext(*from.scannercontext_);
   } else {
     scannercontext_ = nullptr;
   }
   if (from.has_demodcontext()) {
-    demodcontext_ = new ::DemodContext(*from.demodcontext_);
+    demodcontext_ = new ::piscan_pb::DemodContext(*from.demodcontext_);
   } else {
     demodcontext_ = nullptr;
   }
   if (from.has_generalmessage()) {
-    generalmessage_ = new ::GeneralMessage(*from.generalmessage_);
+    generalmessage_ = new ::piscan_pb::GeneralMessage(*from.generalmessage_);
   } else {
     generalmessage_ = nullptr;
   }
   type_ = from.type_;
-  // @@protoc_insertion_point(copy_constructor:ServerToClient)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.ServerToClient)
 }
 
 void ServerToClient::SharedCtor() {
@@ -737,7 +743,7 @@ void ServerToClient::SharedCtor() {
 }
 
 ServerToClient::~ServerToClient() {
-  // @@protoc_insertion_point(destructor:ServerToClient)
+  // @@protoc_insertion_point(destructor:piscan_pb.ServerToClient)
   SharedDtor();
 }
 
@@ -757,7 +763,7 @@ const ServerToClient& ServerToClient::default_instance() {
 
 
 void ServerToClient::Clear() {
-// @@protoc_insertion_point(message_clear_start:ServerToClient)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.ServerToClient)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -785,29 +791,29 @@ const char* ServerToClient::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .ServerToClient.Type type = 1;
+      // .piscan_pb.ServerToClient.Type type = 1;
       case 1: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
         ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        set_type(static_cast<::ServerToClient_Type>(val));
+        set_type(static_cast<::piscan_pb::ServerToClient_Type>(val));
         break;
       }
-      // .ScannerContext scannerContext = 2;
+      // .piscan_pb.ScannerContext scannerContext = 2;
       case 2: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
         ptr = ctx->ParseMessage(mutable_scannercontext(), ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .DemodContext demodContext = 3;
+      // .piscan_pb.DemodContext demodContext = 3;
       case 3: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 26) goto handle_unusual;
         ptr = ctx->ParseMessage(mutable_demodcontext(), ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .GeneralMessage generalMessage = 4;
+      // .piscan_pb.GeneralMessage generalMessage = 4;
       case 4: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 34) goto handle_unusual;
         ptr = ctx->ParseMessage(mutable_generalmessage(), ptr);
@@ -833,27 +839,27 @@ bool ServerToClient::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ServerToClient)
+  // @@protoc_insertion_point(parse_start:piscan_pb.ServerToClient)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .ServerToClient.Type type = 1;
+      // .piscan_pb.ServerToClient.Type type = 1;
       case 1: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
           int value = 0;
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_type(static_cast< ::ServerToClient_Type >(value));
+          set_type(static_cast< ::piscan_pb::ServerToClient_Type >(value));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // .ScannerContext scannerContext = 2;
+      // .piscan_pb.ScannerContext scannerContext = 2;
       case 2: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
@@ -864,7 +870,7 @@ bool ServerToClient::MergePartialFromCodedStream(
         break;
       }
 
-      // .DemodContext demodContext = 3;
+      // .piscan_pb.DemodContext demodContext = 3;
       case 3: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
@@ -875,7 +881,7 @@ bool ServerToClient::MergePartialFromCodedStream(
         break;
       }
 
-      // .GeneralMessage generalMessage = 4;
+      // .piscan_pb.GeneralMessage generalMessage = 4;
       case 4: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
@@ -898,10 +904,10 @@ bool ServerToClient::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:ServerToClient)
+  // @@protoc_insertion_point(parse_success:piscan_pb.ServerToClient)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:ServerToClient)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.ServerToClient)
   return false;
 #undef DO_
 }
@@ -909,29 +915,29 @@ failure:
 
 void ServerToClient::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ServerToClient)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.ServerToClient)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ServerToClient.Type type = 1;
+  // .piscan_pb.ServerToClient.Type type = 1;
   if (this->type() != 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
   }
 
-  // .ScannerContext scannerContext = 2;
+  // .piscan_pb.ScannerContext scannerContext = 2;
   if (this->has_scannercontext()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::scannercontext(this), output);
   }
 
-  // .DemodContext demodContext = 3;
+  // .piscan_pb.DemodContext demodContext = 3;
   if (this->has_demodcontext()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::demodcontext(this), output);
   }
 
-  // .GeneralMessage generalMessage = 4;
+  // .piscan_pb.GeneralMessage generalMessage = 4;
   if (this->has_generalmessage()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, HasBitSetters::generalmessage(this), output);
@@ -941,36 +947,36 @@ void ServerToClient::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:ServerToClient)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.ServerToClient)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* ServerToClient::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ServerToClient)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.ServerToClient)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ServerToClient.Type type = 1;
+  // .piscan_pb.ServerToClient.Type type = 1;
   if (this->type() != 0) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->type(), target);
   }
 
-  // .ScannerContext scannerContext = 2;
+  // .piscan_pb.ScannerContext scannerContext = 2;
   if (this->has_scannercontext()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
         2, HasBitSetters::scannercontext(this), target);
   }
 
-  // .DemodContext demodContext = 3;
+  // .piscan_pb.DemodContext demodContext = 3;
   if (this->has_demodcontext()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, HasBitSetters::demodcontext(this), target);
   }
 
-  // .GeneralMessage generalMessage = 4;
+  // .piscan_pb.GeneralMessage generalMessage = 4;
   if (this->has_generalmessage()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -981,12 +987,12 @@ void ServerToClient::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:ServerToClient)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.ServerToClient)
   return target;
 }
 
 size_t ServerToClient::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ServerToClient)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.ServerToClient)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -998,28 +1004,28 @@ size_t ServerToClient::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .ScannerContext scannerContext = 2;
+  // .piscan_pb.ScannerContext scannerContext = 2;
   if (this->has_scannercontext()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *scannercontext_);
   }
 
-  // .DemodContext demodContext = 3;
+  // .piscan_pb.DemodContext demodContext = 3;
   if (this->has_demodcontext()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *demodcontext_);
   }
 
-  // .GeneralMessage generalMessage = 4;
+  // .piscan_pb.GeneralMessage generalMessage = 4;
   if (this->has_generalmessage()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *generalmessage_);
   }
 
-  // .ServerToClient.Type type = 1;
+  // .piscan_pb.ServerToClient.Type type = 1;
   if (this->type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->type());
@@ -1031,35 +1037,35 @@ size_t ServerToClient::ByteSizeLong() const {
 }
 
 void ServerToClient::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ServerToClient)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.ServerToClient)
   GOOGLE_DCHECK_NE(&from, this);
   const ServerToClient* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ServerToClient>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ServerToClient)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.ServerToClient)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ServerToClient)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.ServerToClient)
     MergeFrom(*source);
   }
 }
 
 void ServerToClient::MergeFrom(const ServerToClient& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ServerToClient)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.ServerToClient)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_scannercontext()) {
-    mutable_scannercontext()->::ScannerContext::MergeFrom(from.scannercontext());
+    mutable_scannercontext()->::piscan_pb::ScannerContext::MergeFrom(from.scannercontext());
   }
   if (from.has_demodcontext()) {
-    mutable_demodcontext()->::DemodContext::MergeFrom(from.demodcontext());
+    mutable_demodcontext()->::piscan_pb::DemodContext::MergeFrom(from.demodcontext());
   }
   if (from.has_generalmessage()) {
-    mutable_generalmessage()->::GeneralMessage::MergeFrom(from.generalmessage());
+    mutable_generalmessage()->::piscan_pb::GeneralMessage::MergeFrom(from.generalmessage());
   }
   if (from.type() != 0) {
     set_type(from.type());
@@ -1067,14 +1073,14 @@ void ServerToClient::MergeFrom(const ServerToClient& from) {
 }
 
 void ServerToClient::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ServerToClient)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.ServerToClient)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void ServerToClient::CopyFrom(const ServerToClient& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ServerToClient)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.ServerToClient)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1104,12 +1110,13 @@ void ServerToClient::InternalSwap(ServerToClient* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace piscan_pb
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::ClientToServer* Arena::CreateMaybeMessage< ::ClientToServer >(Arena* arena) {
-  return Arena::CreateInternal< ::ClientToServer >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::ClientToServer* Arena::CreateMaybeMessage< ::piscan_pb::ClientToServer >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::ClientToServer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::ServerToClient* Arena::CreateMaybeMessage< ::ServerToClient >(Arena* arena) {
-  return Arena::CreateInternal< ::ServerToClient >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::ServerToClient* Arena::CreateMaybeMessage< ::piscan_pb::ServerToClient >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::ServerToClient >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package piscan_pb;
+
 message ScannerContext {
 	enum State {
 		INVAL = 0;

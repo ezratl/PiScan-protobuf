@@ -56,16 +56,19 @@ struct TableStruct_messages_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 void AddDescriptors_messages_2eproto();
+namespace piscan_pb {
 class ClientToServer;
 class ClientToServerDefaultTypeInternal;
 extern ClientToServerDefaultTypeInternal _ClientToServer_default_instance_;
 class ServerToClient;
 class ServerToClientDefaultTypeInternal;
 extern ServerToClientDefaultTypeInternal _ServerToClient_default_instance_;
+}  // namespace piscan_pb
 PROTOBUF_NAMESPACE_OPEN
-template<> ::ClientToServer* Arena::CreateMaybeMessage<::ClientToServer>(Arena*);
-template<> ::ServerToClient* Arena::CreateMaybeMessage<::ServerToClient>(Arena*);
+template<> ::piscan_pb::ClientToServer* Arena::CreateMaybeMessage<::piscan_pb::ClientToServer>(Arena*);
+template<> ::piscan_pb::ServerToClient* Arena::CreateMaybeMessage<::piscan_pb::ServerToClient>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
+namespace piscan_pb {
 
 enum ClientToServer_Type {
   ClientToServer_Type_GENERAL_REQUEST = 0,
@@ -114,7 +117,7 @@ inline bool ServerToClient_Type_Parse(
 // ===================================================================
 
 class ClientToServer final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ClientToServer) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.ClientToServer) */ {
  public:
   ClientToServer();
   virtual ~ClientToServer();
@@ -192,7 +195,7 @@ class ClientToServer final :
   void InternalSwap(ClientToServer* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "ClientToServer";
+    return "piscan_pb.ClientToServer";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -237,47 +240,47 @@ class ClientToServer final :
 
   // accessors -------------------------------------------------------
 
-  // .GeneralRequest generalRequest = 2;
+  // .piscan_pb.GeneralRequest generalRequest = 2;
   bool has_generalrequest() const;
   void clear_generalrequest();
   static const int kGeneralRequestFieldNumber = 2;
-  const ::GeneralRequest& generalrequest() const;
-  ::GeneralRequest* release_generalrequest();
-  ::GeneralRequest* mutable_generalrequest();
-  void set_allocated_generalrequest(::GeneralRequest* generalrequest);
+  const ::piscan_pb::GeneralRequest& generalrequest() const;
+  ::piscan_pb::GeneralRequest* release_generalrequest();
+  ::piscan_pb::GeneralRequest* mutable_generalrequest();
+  void set_allocated_generalrequest(::piscan_pb::GeneralRequest* generalrequest);
 
-  // .ScannerStateRequest scanStateRequest = 3;
+  // .piscan_pb.ScannerStateRequest scanStateRequest = 3;
   bool has_scanstaterequest() const;
   void clear_scanstaterequest();
   static const int kScanStateRequestFieldNumber = 3;
-  const ::ScannerStateRequest& scanstaterequest() const;
-  ::ScannerStateRequest* release_scanstaterequest();
-  ::ScannerStateRequest* mutable_scanstaterequest();
-  void set_allocated_scanstaterequest(::ScannerStateRequest* scanstaterequest);
+  const ::piscan_pb::ScannerStateRequest& scanstaterequest() const;
+  ::piscan_pb::ScannerStateRequest* release_scanstaterequest();
+  ::piscan_pb::ScannerStateRequest* mutable_scanstaterequest();
+  void set_allocated_scanstaterequest(::piscan_pb::ScannerStateRequest* scanstaterequest);
 
-  // .DemodRequest demodRequest = 4;
+  // .piscan_pb.DemodRequest demodRequest = 4;
   bool has_demodrequest() const;
   void clear_demodrequest();
   static const int kDemodRequestFieldNumber = 4;
-  const ::DemodRequest& demodrequest() const;
-  ::DemodRequest* release_demodrequest();
-  ::DemodRequest* mutable_demodrequest();
-  void set_allocated_demodrequest(::DemodRequest* demodrequest);
+  const ::piscan_pb::DemodRequest& demodrequest() const;
+  ::piscan_pb::DemodRequest* release_demodrequest();
+  ::piscan_pb::DemodRequest* mutable_demodrequest();
+  void set_allocated_demodrequest(::piscan_pb::DemodRequest* demodrequest);
 
-  // .ClientToServer.Type type = 1;
+  // .piscan_pb.ClientToServer.Type type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
-  ::ClientToServer_Type type() const;
-  void set_type(::ClientToServer_Type value);
+  ::piscan_pb::ClientToServer_Type type() const;
+  void set_type(::piscan_pb::ClientToServer_Type value);
 
-  // @@protoc_insertion_point(class_scope:ClientToServer)
+  // @@protoc_insertion_point(class_scope:piscan_pb.ClientToServer)
  private:
   class HasBitSetters;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::GeneralRequest* generalrequest_;
-  ::ScannerStateRequest* scanstaterequest_;
-  ::DemodRequest* demodrequest_;
+  ::piscan_pb::GeneralRequest* generalrequest_;
+  ::piscan_pb::ScannerStateRequest* scanstaterequest_;
+  ::piscan_pb::DemodRequest* demodrequest_;
   int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_messages_2eproto;
@@ -285,7 +288,7 @@ class ClientToServer final :
 // -------------------------------------------------------------------
 
 class ServerToClient final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ServerToClient) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.ServerToClient) */ {
  public:
   ServerToClient();
   virtual ~ServerToClient();
@@ -363,7 +366,7 @@ class ServerToClient final :
   void InternalSwap(ServerToClient* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "ServerToClient";
+    return "piscan_pb.ServerToClient";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -408,47 +411,47 @@ class ServerToClient final :
 
   // accessors -------------------------------------------------------
 
-  // .ScannerContext scannerContext = 2;
+  // .piscan_pb.ScannerContext scannerContext = 2;
   bool has_scannercontext() const;
   void clear_scannercontext();
   static const int kScannerContextFieldNumber = 2;
-  const ::ScannerContext& scannercontext() const;
-  ::ScannerContext* release_scannercontext();
-  ::ScannerContext* mutable_scannercontext();
-  void set_allocated_scannercontext(::ScannerContext* scannercontext);
+  const ::piscan_pb::ScannerContext& scannercontext() const;
+  ::piscan_pb::ScannerContext* release_scannercontext();
+  ::piscan_pb::ScannerContext* mutable_scannercontext();
+  void set_allocated_scannercontext(::piscan_pb::ScannerContext* scannercontext);
 
-  // .DemodContext demodContext = 3;
+  // .piscan_pb.DemodContext demodContext = 3;
   bool has_demodcontext() const;
   void clear_demodcontext();
   static const int kDemodContextFieldNumber = 3;
-  const ::DemodContext& demodcontext() const;
-  ::DemodContext* release_demodcontext();
-  ::DemodContext* mutable_demodcontext();
-  void set_allocated_demodcontext(::DemodContext* demodcontext);
+  const ::piscan_pb::DemodContext& demodcontext() const;
+  ::piscan_pb::DemodContext* release_demodcontext();
+  ::piscan_pb::DemodContext* mutable_demodcontext();
+  void set_allocated_demodcontext(::piscan_pb::DemodContext* demodcontext);
 
-  // .GeneralMessage generalMessage = 4;
+  // .piscan_pb.GeneralMessage generalMessage = 4;
   bool has_generalmessage() const;
   void clear_generalmessage();
   static const int kGeneralMessageFieldNumber = 4;
-  const ::GeneralMessage& generalmessage() const;
-  ::GeneralMessage* release_generalmessage();
-  ::GeneralMessage* mutable_generalmessage();
-  void set_allocated_generalmessage(::GeneralMessage* generalmessage);
+  const ::piscan_pb::GeneralMessage& generalmessage() const;
+  ::piscan_pb::GeneralMessage* release_generalmessage();
+  ::piscan_pb::GeneralMessage* mutable_generalmessage();
+  void set_allocated_generalmessage(::piscan_pb::GeneralMessage* generalmessage);
 
-  // .ServerToClient.Type type = 1;
+  // .piscan_pb.ServerToClient.Type type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
-  ::ServerToClient_Type type() const;
-  void set_type(::ServerToClient_Type value);
+  ::piscan_pb::ServerToClient_Type type() const;
+  void set_type(::piscan_pb::ServerToClient_Type value);
 
-  // @@protoc_insertion_point(class_scope:ServerToClient)
+  // @@protoc_insertion_point(class_scope:piscan_pb.ServerToClient)
  private:
   class HasBitSetters;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::ScannerContext* scannercontext_;
-  ::DemodContext* demodcontext_;
-  ::GeneralMessage* generalmessage_;
+  ::piscan_pb::ScannerContext* scannercontext_;
+  ::piscan_pb::DemodContext* demodcontext_;
+  ::piscan_pb::GeneralMessage* generalmessage_;
   int type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_messages_2eproto;
@@ -464,47 +467,47 @@ class ServerToClient final :
 #endif  // __GNUC__
 // ClientToServer
 
-// .ClientToServer.Type type = 1;
+// .piscan_pb.ClientToServer.Type type = 1;
 inline void ClientToServer::clear_type() {
   type_ = 0;
 }
-inline ::ClientToServer_Type ClientToServer::type() const {
-  // @@protoc_insertion_point(field_get:ClientToServer.type)
-  return static_cast< ::ClientToServer_Type >(type_);
+inline ::piscan_pb::ClientToServer_Type ClientToServer::type() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.ClientToServer.type)
+  return static_cast< ::piscan_pb::ClientToServer_Type >(type_);
 }
-inline void ClientToServer::set_type(::ClientToServer_Type value) {
+inline void ClientToServer::set_type(::piscan_pb::ClientToServer_Type value) {
   
   type_ = value;
-  // @@protoc_insertion_point(field_set:ClientToServer.type)
+  // @@protoc_insertion_point(field_set:piscan_pb.ClientToServer.type)
 }
 
-// .GeneralRequest generalRequest = 2;
+// .piscan_pb.GeneralRequest generalRequest = 2;
 inline bool ClientToServer::has_generalrequest() const {
   return this != internal_default_instance() && generalrequest_ != nullptr;
 }
-inline const ::GeneralRequest& ClientToServer::generalrequest() const {
-  const ::GeneralRequest* p = generalrequest_;
-  // @@protoc_insertion_point(field_get:ClientToServer.generalRequest)
-  return p != nullptr ? *p : *reinterpret_cast<const ::GeneralRequest*>(
-      &::_GeneralRequest_default_instance_);
+inline const ::piscan_pb::GeneralRequest& ClientToServer::generalrequest() const {
+  const ::piscan_pb::GeneralRequest* p = generalrequest_;
+  // @@protoc_insertion_point(field_get:piscan_pb.ClientToServer.generalRequest)
+  return p != nullptr ? *p : *reinterpret_cast<const ::piscan_pb::GeneralRequest*>(
+      &::piscan_pb::_GeneralRequest_default_instance_);
 }
-inline ::GeneralRequest* ClientToServer::release_generalrequest() {
-  // @@protoc_insertion_point(field_release:ClientToServer.generalRequest)
+inline ::piscan_pb::GeneralRequest* ClientToServer::release_generalrequest() {
+  // @@protoc_insertion_point(field_release:piscan_pb.ClientToServer.generalRequest)
   
-  ::GeneralRequest* temp = generalrequest_;
+  ::piscan_pb::GeneralRequest* temp = generalrequest_;
   generalrequest_ = nullptr;
   return temp;
 }
-inline ::GeneralRequest* ClientToServer::mutable_generalrequest() {
+inline ::piscan_pb::GeneralRequest* ClientToServer::mutable_generalrequest() {
   
   if (generalrequest_ == nullptr) {
-    auto* p = CreateMaybeMessage<::GeneralRequest>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::piscan_pb::GeneralRequest>(GetArenaNoVirtual());
     generalrequest_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:ClientToServer.generalRequest)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ClientToServer.generalRequest)
   return generalrequest_;
 }
-inline void ClientToServer::set_allocated_generalrequest(::GeneralRequest* generalrequest) {
+inline void ClientToServer::set_allocated_generalrequest(::piscan_pb::GeneralRequest* generalrequest) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(generalrequest_);
@@ -520,36 +523,36 @@ inline void ClientToServer::set_allocated_generalrequest(::GeneralRequest* gener
     
   }
   generalrequest_ = generalrequest;
-  // @@protoc_insertion_point(field_set_allocated:ClientToServer.generalRequest)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ClientToServer.generalRequest)
 }
 
-// .ScannerStateRequest scanStateRequest = 3;
+// .piscan_pb.ScannerStateRequest scanStateRequest = 3;
 inline bool ClientToServer::has_scanstaterequest() const {
   return this != internal_default_instance() && scanstaterequest_ != nullptr;
 }
-inline const ::ScannerStateRequest& ClientToServer::scanstaterequest() const {
-  const ::ScannerStateRequest* p = scanstaterequest_;
-  // @@protoc_insertion_point(field_get:ClientToServer.scanStateRequest)
-  return p != nullptr ? *p : *reinterpret_cast<const ::ScannerStateRequest*>(
-      &::_ScannerStateRequest_default_instance_);
+inline const ::piscan_pb::ScannerStateRequest& ClientToServer::scanstaterequest() const {
+  const ::piscan_pb::ScannerStateRequest* p = scanstaterequest_;
+  // @@protoc_insertion_point(field_get:piscan_pb.ClientToServer.scanStateRequest)
+  return p != nullptr ? *p : *reinterpret_cast<const ::piscan_pb::ScannerStateRequest*>(
+      &::piscan_pb::_ScannerStateRequest_default_instance_);
 }
-inline ::ScannerStateRequest* ClientToServer::release_scanstaterequest() {
-  // @@protoc_insertion_point(field_release:ClientToServer.scanStateRequest)
+inline ::piscan_pb::ScannerStateRequest* ClientToServer::release_scanstaterequest() {
+  // @@protoc_insertion_point(field_release:piscan_pb.ClientToServer.scanStateRequest)
   
-  ::ScannerStateRequest* temp = scanstaterequest_;
+  ::piscan_pb::ScannerStateRequest* temp = scanstaterequest_;
   scanstaterequest_ = nullptr;
   return temp;
 }
-inline ::ScannerStateRequest* ClientToServer::mutable_scanstaterequest() {
+inline ::piscan_pb::ScannerStateRequest* ClientToServer::mutable_scanstaterequest() {
   
   if (scanstaterequest_ == nullptr) {
-    auto* p = CreateMaybeMessage<::ScannerStateRequest>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::piscan_pb::ScannerStateRequest>(GetArenaNoVirtual());
     scanstaterequest_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:ClientToServer.scanStateRequest)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ClientToServer.scanStateRequest)
   return scanstaterequest_;
 }
-inline void ClientToServer::set_allocated_scanstaterequest(::ScannerStateRequest* scanstaterequest) {
+inline void ClientToServer::set_allocated_scanstaterequest(::piscan_pb::ScannerStateRequest* scanstaterequest) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(scanstaterequest_);
@@ -565,36 +568,36 @@ inline void ClientToServer::set_allocated_scanstaterequest(::ScannerStateRequest
     
   }
   scanstaterequest_ = scanstaterequest;
-  // @@protoc_insertion_point(field_set_allocated:ClientToServer.scanStateRequest)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ClientToServer.scanStateRequest)
 }
 
-// .DemodRequest demodRequest = 4;
+// .piscan_pb.DemodRequest demodRequest = 4;
 inline bool ClientToServer::has_demodrequest() const {
   return this != internal_default_instance() && demodrequest_ != nullptr;
 }
-inline const ::DemodRequest& ClientToServer::demodrequest() const {
-  const ::DemodRequest* p = demodrequest_;
-  // @@protoc_insertion_point(field_get:ClientToServer.demodRequest)
-  return p != nullptr ? *p : *reinterpret_cast<const ::DemodRequest*>(
-      &::_DemodRequest_default_instance_);
+inline const ::piscan_pb::DemodRequest& ClientToServer::demodrequest() const {
+  const ::piscan_pb::DemodRequest* p = demodrequest_;
+  // @@protoc_insertion_point(field_get:piscan_pb.ClientToServer.demodRequest)
+  return p != nullptr ? *p : *reinterpret_cast<const ::piscan_pb::DemodRequest*>(
+      &::piscan_pb::_DemodRequest_default_instance_);
 }
-inline ::DemodRequest* ClientToServer::release_demodrequest() {
-  // @@protoc_insertion_point(field_release:ClientToServer.demodRequest)
+inline ::piscan_pb::DemodRequest* ClientToServer::release_demodrequest() {
+  // @@protoc_insertion_point(field_release:piscan_pb.ClientToServer.demodRequest)
   
-  ::DemodRequest* temp = demodrequest_;
+  ::piscan_pb::DemodRequest* temp = demodrequest_;
   demodrequest_ = nullptr;
   return temp;
 }
-inline ::DemodRequest* ClientToServer::mutable_demodrequest() {
+inline ::piscan_pb::DemodRequest* ClientToServer::mutable_demodrequest() {
   
   if (demodrequest_ == nullptr) {
-    auto* p = CreateMaybeMessage<::DemodRequest>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::piscan_pb::DemodRequest>(GetArenaNoVirtual());
     demodrequest_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:ClientToServer.demodRequest)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ClientToServer.demodRequest)
   return demodrequest_;
 }
-inline void ClientToServer::set_allocated_demodrequest(::DemodRequest* demodrequest) {
+inline void ClientToServer::set_allocated_demodrequest(::piscan_pb::DemodRequest* demodrequest) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(demodrequest_);
@@ -610,54 +613,54 @@ inline void ClientToServer::set_allocated_demodrequest(::DemodRequest* demodrequ
     
   }
   demodrequest_ = demodrequest;
-  // @@protoc_insertion_point(field_set_allocated:ClientToServer.demodRequest)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ClientToServer.demodRequest)
 }
 
 // -------------------------------------------------------------------
 
 // ServerToClient
 
-// .ServerToClient.Type type = 1;
+// .piscan_pb.ServerToClient.Type type = 1;
 inline void ServerToClient::clear_type() {
   type_ = 0;
 }
-inline ::ServerToClient_Type ServerToClient::type() const {
-  // @@protoc_insertion_point(field_get:ServerToClient.type)
-  return static_cast< ::ServerToClient_Type >(type_);
+inline ::piscan_pb::ServerToClient_Type ServerToClient::type() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.ServerToClient.type)
+  return static_cast< ::piscan_pb::ServerToClient_Type >(type_);
 }
-inline void ServerToClient::set_type(::ServerToClient_Type value) {
+inline void ServerToClient::set_type(::piscan_pb::ServerToClient_Type value) {
   
   type_ = value;
-  // @@protoc_insertion_point(field_set:ServerToClient.type)
+  // @@protoc_insertion_point(field_set:piscan_pb.ServerToClient.type)
 }
 
-// .ScannerContext scannerContext = 2;
+// .piscan_pb.ScannerContext scannerContext = 2;
 inline bool ServerToClient::has_scannercontext() const {
   return this != internal_default_instance() && scannercontext_ != nullptr;
 }
-inline const ::ScannerContext& ServerToClient::scannercontext() const {
-  const ::ScannerContext* p = scannercontext_;
-  // @@protoc_insertion_point(field_get:ServerToClient.scannerContext)
-  return p != nullptr ? *p : *reinterpret_cast<const ::ScannerContext*>(
-      &::_ScannerContext_default_instance_);
+inline const ::piscan_pb::ScannerContext& ServerToClient::scannercontext() const {
+  const ::piscan_pb::ScannerContext* p = scannercontext_;
+  // @@protoc_insertion_point(field_get:piscan_pb.ServerToClient.scannerContext)
+  return p != nullptr ? *p : *reinterpret_cast<const ::piscan_pb::ScannerContext*>(
+      &::piscan_pb::_ScannerContext_default_instance_);
 }
-inline ::ScannerContext* ServerToClient::release_scannercontext() {
-  // @@protoc_insertion_point(field_release:ServerToClient.scannerContext)
+inline ::piscan_pb::ScannerContext* ServerToClient::release_scannercontext() {
+  // @@protoc_insertion_point(field_release:piscan_pb.ServerToClient.scannerContext)
   
-  ::ScannerContext* temp = scannercontext_;
+  ::piscan_pb::ScannerContext* temp = scannercontext_;
   scannercontext_ = nullptr;
   return temp;
 }
-inline ::ScannerContext* ServerToClient::mutable_scannercontext() {
+inline ::piscan_pb::ScannerContext* ServerToClient::mutable_scannercontext() {
   
   if (scannercontext_ == nullptr) {
-    auto* p = CreateMaybeMessage<::ScannerContext>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::piscan_pb::ScannerContext>(GetArenaNoVirtual());
     scannercontext_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:ServerToClient.scannerContext)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ServerToClient.scannerContext)
   return scannercontext_;
 }
-inline void ServerToClient::set_allocated_scannercontext(::ScannerContext* scannercontext) {
+inline void ServerToClient::set_allocated_scannercontext(::piscan_pb::ScannerContext* scannercontext) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(scannercontext_);
@@ -673,36 +676,36 @@ inline void ServerToClient::set_allocated_scannercontext(::ScannerContext* scann
     
   }
   scannercontext_ = scannercontext;
-  // @@protoc_insertion_point(field_set_allocated:ServerToClient.scannerContext)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ServerToClient.scannerContext)
 }
 
-// .DemodContext demodContext = 3;
+// .piscan_pb.DemodContext demodContext = 3;
 inline bool ServerToClient::has_demodcontext() const {
   return this != internal_default_instance() && demodcontext_ != nullptr;
 }
-inline const ::DemodContext& ServerToClient::demodcontext() const {
-  const ::DemodContext* p = demodcontext_;
-  // @@protoc_insertion_point(field_get:ServerToClient.demodContext)
-  return p != nullptr ? *p : *reinterpret_cast<const ::DemodContext*>(
-      &::_DemodContext_default_instance_);
+inline const ::piscan_pb::DemodContext& ServerToClient::demodcontext() const {
+  const ::piscan_pb::DemodContext* p = demodcontext_;
+  // @@protoc_insertion_point(field_get:piscan_pb.ServerToClient.demodContext)
+  return p != nullptr ? *p : *reinterpret_cast<const ::piscan_pb::DemodContext*>(
+      &::piscan_pb::_DemodContext_default_instance_);
 }
-inline ::DemodContext* ServerToClient::release_demodcontext() {
-  // @@protoc_insertion_point(field_release:ServerToClient.demodContext)
+inline ::piscan_pb::DemodContext* ServerToClient::release_demodcontext() {
+  // @@protoc_insertion_point(field_release:piscan_pb.ServerToClient.demodContext)
   
-  ::DemodContext* temp = demodcontext_;
+  ::piscan_pb::DemodContext* temp = demodcontext_;
   demodcontext_ = nullptr;
   return temp;
 }
-inline ::DemodContext* ServerToClient::mutable_demodcontext() {
+inline ::piscan_pb::DemodContext* ServerToClient::mutable_demodcontext() {
   
   if (demodcontext_ == nullptr) {
-    auto* p = CreateMaybeMessage<::DemodContext>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::piscan_pb::DemodContext>(GetArenaNoVirtual());
     demodcontext_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:ServerToClient.demodContext)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ServerToClient.demodContext)
   return demodcontext_;
 }
-inline void ServerToClient::set_allocated_demodcontext(::DemodContext* demodcontext) {
+inline void ServerToClient::set_allocated_demodcontext(::piscan_pb::DemodContext* demodcontext) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(demodcontext_);
@@ -718,36 +721,36 @@ inline void ServerToClient::set_allocated_demodcontext(::DemodContext* demodcont
     
   }
   demodcontext_ = demodcontext;
-  // @@protoc_insertion_point(field_set_allocated:ServerToClient.demodContext)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ServerToClient.demodContext)
 }
 
-// .GeneralMessage generalMessage = 4;
+// .piscan_pb.GeneralMessage generalMessage = 4;
 inline bool ServerToClient::has_generalmessage() const {
   return this != internal_default_instance() && generalmessage_ != nullptr;
 }
-inline const ::GeneralMessage& ServerToClient::generalmessage() const {
-  const ::GeneralMessage* p = generalmessage_;
-  // @@protoc_insertion_point(field_get:ServerToClient.generalMessage)
-  return p != nullptr ? *p : *reinterpret_cast<const ::GeneralMessage*>(
-      &::_GeneralMessage_default_instance_);
+inline const ::piscan_pb::GeneralMessage& ServerToClient::generalmessage() const {
+  const ::piscan_pb::GeneralMessage* p = generalmessage_;
+  // @@protoc_insertion_point(field_get:piscan_pb.ServerToClient.generalMessage)
+  return p != nullptr ? *p : *reinterpret_cast<const ::piscan_pb::GeneralMessage*>(
+      &::piscan_pb::_GeneralMessage_default_instance_);
 }
-inline ::GeneralMessage* ServerToClient::release_generalmessage() {
-  // @@protoc_insertion_point(field_release:ServerToClient.generalMessage)
+inline ::piscan_pb::GeneralMessage* ServerToClient::release_generalmessage() {
+  // @@protoc_insertion_point(field_release:piscan_pb.ServerToClient.generalMessage)
   
-  ::GeneralMessage* temp = generalmessage_;
+  ::piscan_pb::GeneralMessage* temp = generalmessage_;
   generalmessage_ = nullptr;
   return temp;
 }
-inline ::GeneralMessage* ServerToClient::mutable_generalmessage() {
+inline ::piscan_pb::GeneralMessage* ServerToClient::mutable_generalmessage() {
   
   if (generalmessage_ == nullptr) {
-    auto* p = CreateMaybeMessage<::GeneralMessage>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::piscan_pb::GeneralMessage>(GetArenaNoVirtual());
     generalmessage_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:ServerToClient.generalMessage)
+  // @@protoc_insertion_point(field_mutable:piscan_pb.ServerToClient.generalMessage)
   return generalmessage_;
 }
-inline void ServerToClient::set_allocated_generalmessage(::GeneralMessage* generalmessage) {
+inline void ServerToClient::set_allocated_generalmessage(::piscan_pb::GeneralMessage* generalmessage) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(generalmessage_);
@@ -763,7 +766,7 @@ inline void ServerToClient::set_allocated_generalmessage(::GeneralMessage* gener
     
   }
   generalmessage_ = generalmessage;
-  // @@protoc_insertion_point(field_set_allocated:ServerToClient.generalMessage)
+  // @@protoc_insertion_point(field_set_allocated:piscan_pb.ServerToClient.generalMessage)
 }
 
 #ifdef __GNUC__
@@ -774,18 +777,19 @@ inline void ServerToClient::set_allocated_generalmessage(::GeneralMessage* gener
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace piscan_pb
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::ClientToServer_Type> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::ClientToServer_Type> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::ClientToServer_Type>() {
-  return ::ClientToServer_Type_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::ClientToServer_Type>() {
+  return ::piscan_pb::ClientToServer_Type_descriptor();
 }
-template <> struct is_proto_enum< ::ServerToClient_Type> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::ServerToClient_Type> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::ServerToClient_Type>() {
-  return ::ServerToClient_Type_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::ServerToClient_Type>() {
+  return ::piscan_pb::ServerToClient_Type_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

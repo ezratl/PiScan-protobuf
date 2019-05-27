@@ -3,6 +3,8 @@ syntax = "proto3";
 import "request.proto";
 import "context.proto";
 
+package piscan_pb;
+
 message ClientToServer {
 	enum Type {
 		GENERAL_REQUEST = 0;

@@ -16,6 +16,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
+namespace piscan_pb {
 class ScannerContextDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ScannerContext> _instance;
@@ -28,15 +29,16 @@ class GeneralMessageDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GeneralMessage> _instance;
 } _GeneralMessage_default_instance_;
+}  // namespace piscan_pb
 static void InitDefaultsScannerContext_context_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ScannerContext_default_instance_;
-    new (ptr) ::ScannerContext();
+    void* ptr = &::piscan_pb::_ScannerContext_default_instance_;
+    new (ptr) ::piscan_pb::ScannerContext();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ScannerContext::InitAsDefaultInstance();
+  ::piscan_pb::ScannerContext::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerContext_context_2eproto =
@@ -46,11 +48,11 @@ static void InitDefaultsDemodContext_context_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_DemodContext_default_instance_;
-    new (ptr) ::DemodContext();
+    void* ptr = &::piscan_pb::_DemodContext_default_instance_;
+    new (ptr) ::piscan_pb::DemodContext();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DemodContext::InitAsDefaultInstance();
+  ::piscan_pb::DemodContext::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DemodContext_context_2eproto =
@@ -60,11 +62,11 @@ static void InitDefaultsGeneralMessage_context_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_GeneralMessage_default_instance_;
-    new (ptr) ::GeneralMessage();
+    void* ptr = &::piscan_pb::_GeneralMessage_default_instance_;
+    new (ptr) ::piscan_pb::GeneralMessage();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::GeneralMessage::InitAsDefaultInstance();
+  ::piscan_pb::GeneralMessage::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GeneralMessage_context_2eproto =
@@ -82,41 +84,41 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_context_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, state_),
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, freq_),
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, systemtag_),
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, entrytag_),
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, modulation_),
-  PROTOBUF_FIELD_OFFSET(::ScannerContext, entryindex_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, state_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, freq_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, systemtag_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, entrytag_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, modulation_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerContext, entryindex_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::DemodContext, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodContext, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::DemodContext, squelch_),
-  PROTOBUF_FIELD_OFFSET(::DemodContext, gain_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodContext, squelch_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodContext, gain_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::GeneralMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::GeneralMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::GeneralMessage, type_),
-  PROTOBUF_FIELD_OFFSET(::GeneralMessage, content_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::GeneralMessage, type_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::GeneralMessage, content_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::ScannerContext)},
-  { 11, -1, sizeof(::DemodContext)},
-  { 18, -1, sizeof(::GeneralMessage)},
+  { 0, -1, sizeof(::piscan_pb::ScannerContext)},
+  { 11, -1, sizeof(::piscan_pb::DemodContext)},
+  { 18, -1, sizeof(::piscan_pb::GeneralMessage)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ScannerContext_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_DemodContext_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GeneralMessage_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_ScannerContext_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_DemodContext_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_GeneralMessage_default_instance_),
 };
 
 static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descriptors_table_context_2eproto = {
@@ -126,21 +128,22 @@ static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descript
 };
 
 const char descriptor_table_protodef_context_2eproto[] =
-  "\n\rcontext.proto\"\306\001\n\016ScannerContext\022$\n\005st"
-  "ate\030\001 \001(\0162\025.ScannerContext.State\022\014\n\004freq"
-  "\030\002 \001(\004\022\021\n\tsystemTag\030\003 \001(\t\022\020\n\010entryTag\030\004 "
-  "\001(\t\022\022\n\nmodulation\030\005 \001(\t\022\022\n\nentryIndex\030\006 "
-  "\001(\t\"3\n\005State\022\t\n\005INVAL\020\000\022\010\n\004SCAN\020\001\022\010\n\004HOL"
-  "D\020\002\022\013\n\007RECEIVE\020\003\"-\n\014DemodContext\022\017\n\007sque"
-  "lch\030\001 \001(\005\022\014\n\004gain\030\002 \001(\002\"o\n\016GeneralMessag"
-  "e\022\"\n\004type\030\001 \001(\0162\024.GeneralMessage.Type\022\017\n"
-  "\007content\030\002 \001(\t\"(\n\004Type\022\010\n\004INFO\020\000\022\013\n\007WARN"
-  "ING\020\001\022\t\n\005ERROR\020\002b\006proto3"
+  "\n\rcontext.proto\022\tpiscan_pb\"\320\001\n\016ScannerCo"
+  "ntext\022.\n\005state\030\001 \001(\0162\037.piscan_pb.Scanner"
+  "Context.State\022\014\n\004freq\030\002 \001(\004\022\021\n\tsystemTag"
+  "\030\003 \001(\t\022\020\n\010entryTag\030\004 \001(\t\022\022\n\nmodulation\030\005"
+  " \001(\t\022\022\n\nentryIndex\030\006 \001(\t\"3\n\005State\022\t\n\005INV"
+  "AL\020\000\022\010\n\004SCAN\020\001\022\010\n\004HOLD\020\002\022\013\n\007RECEIVE\020\003\"-\n"
+  "\014DemodContext\022\017\n\007squelch\030\001 \001(\005\022\014\n\004gain\030\002"
+  " \001(\002\"y\n\016GeneralMessage\022,\n\004type\030\001 \001(\0162\036.p"
+  "iscan_pb.GeneralMessage.Type\022\017\n\007content\030"
+  "\002 \001(\t\"(\n\004Type\022\010\n\004INFO\020\000\022\013\n\007WARNING\020\001\022\t\n\005"
+  "ERROR\020\002b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_context_2eproto = {
   false, InitDefaults_context_2eproto, 
   descriptor_table_protodef_context_2eproto,
-  "context.proto", &assign_descriptors_table_context_2eproto, 384,
+  "context.proto", &assign_descriptors_table_context_2eproto, 415,
 };
 
 void AddDescriptors_context_2eproto() {
@@ -152,6 +155,7 @@ void AddDescriptors_context_2eproto() {
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_context_2eproto = []() { AddDescriptors_context_2eproto(); return true; }();
+namespace piscan_pb {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ScannerContext_State_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_context_2eproto);
   return file_level_enum_descriptors_context_2eproto[0];
@@ -221,7 +225,7 @@ const int ScannerContext::kEntryIndexFieldNumber;
 ScannerContext::ScannerContext()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ScannerContext)
+  // @@protoc_insertion_point(constructor:piscan_pb.ScannerContext)
 }
 ScannerContext::ScannerContext(const ScannerContext& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -246,7 +250,7 @@ ScannerContext::ScannerContext(const ScannerContext& from)
   ::memcpy(&freq_, &from.freq_,
     static_cast<size_t>(reinterpret_cast<char*>(&state_) -
     reinterpret_cast<char*>(&freq_)) + sizeof(state_));
-  // @@protoc_insertion_point(copy_constructor:ScannerContext)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.ScannerContext)
 }
 
 void ScannerContext::SharedCtor() {
@@ -262,7 +266,7 @@ void ScannerContext::SharedCtor() {
 }
 
 ScannerContext::~ScannerContext() {
-  // @@protoc_insertion_point(destructor:ScannerContext)
+  // @@protoc_insertion_point(destructor:piscan_pb.ScannerContext)
   SharedDtor();
 }
 
@@ -283,7 +287,7 @@ const ScannerContext& ScannerContext::default_instance() {
 
 
 void ScannerContext::Clear() {
-// @@protoc_insertion_point(message_clear_start:ScannerContext)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.ScannerContext)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -305,12 +309,12 @@ const char* ScannerContext::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .ScannerContext.State state = 1;
+      // .piscan_pb.ScannerContext.State state = 1;
       case 1: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
         ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        set_state(static_cast<::ScannerContext_State>(val));
+        set_state(static_cast<::piscan_pb::ScannerContext_State>(val));
         break;
       }
       // uint64 freq = 2;
@@ -323,28 +327,28 @@ const char* ScannerContext::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string systemTag = 3;
       case 3: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 26) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_systemtag(), ptr, ctx, "ScannerContext.systemTag");
+        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_systemtag(), ptr, ctx, "piscan_pb.ScannerContext.systemTag");
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
       // string entryTag = 4;
       case 4: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 34) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_entrytag(), ptr, ctx, "ScannerContext.entryTag");
+        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_entrytag(), ptr, ctx, "piscan_pb.ScannerContext.entryTag");
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
       // string modulation = 5;
       case 5: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 42) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_modulation(), ptr, ctx, "ScannerContext.modulation");
+        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_modulation(), ptr, ctx, "piscan_pb.ScannerContext.modulation");
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
       // string entryIndex = 6;
       case 6: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 50) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_entryindex(), ptr, ctx, "ScannerContext.entryIndex");
+        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_entryindex(), ptr, ctx, "piscan_pb.ScannerContext.entryIndex");
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -367,20 +371,20 @@ bool ScannerContext::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ScannerContext)
+  // @@protoc_insertion_point(parse_start:piscan_pb.ScannerContext)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .ScannerContext.State state = 1;
+      // .piscan_pb.ScannerContext.State state = 1;
       case 1: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
           int value = 0;
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_state(static_cast< ::ScannerContext_State >(value));
+          set_state(static_cast< ::piscan_pb::ScannerContext_State >(value));
         } else {
           goto handle_unusual;
         }
@@ -408,7 +412,7 @@ bool ScannerContext::MergePartialFromCodedStream(
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->systemtag().data(), static_cast<int>(this->systemtag().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "ScannerContext.systemTag"));
+            "piscan_pb.ScannerContext.systemTag"));
         } else {
           goto handle_unusual;
         }
@@ -423,7 +427,7 @@ bool ScannerContext::MergePartialFromCodedStream(
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->entrytag().data(), static_cast<int>(this->entrytag().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "ScannerContext.entryTag"));
+            "piscan_pb.ScannerContext.entryTag"));
         } else {
           goto handle_unusual;
         }
@@ -438,7 +442,7 @@ bool ScannerContext::MergePartialFromCodedStream(
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->modulation().data(), static_cast<int>(this->modulation().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "ScannerContext.modulation"));
+            "piscan_pb.ScannerContext.modulation"));
         } else {
           goto handle_unusual;
         }
@@ -453,7 +457,7 @@ bool ScannerContext::MergePartialFromCodedStream(
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->entryindex().data(), static_cast<int>(this->entryindex().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "ScannerContext.entryIndex"));
+            "piscan_pb.ScannerContext.entryIndex"));
         } else {
           goto handle_unusual;
         }
@@ -472,10 +476,10 @@ bool ScannerContext::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:ScannerContext)
+  // @@protoc_insertion_point(parse_success:piscan_pb.ScannerContext)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:ScannerContext)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.ScannerContext)
   return false;
 #undef DO_
 }
@@ -483,11 +487,11 @@ failure:
 
 void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ScannerContext)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.ScannerContext)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ScannerContext.State state = 1;
+  // .piscan_pb.ScannerContext.State state = 1;
   if (this->state() != 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
       1, this->state(), output);
@@ -503,7 +507,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->systemtag().data(), static_cast<int>(this->systemtag().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.systemTag");
+      "piscan_pb.ScannerContext.systemTag");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->systemtag(), output);
   }
@@ -513,7 +517,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->entrytag().data(), static_cast<int>(this->entrytag().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.entryTag");
+      "piscan_pb.ScannerContext.entryTag");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->entrytag(), output);
   }
@@ -523,7 +527,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->modulation().data(), static_cast<int>(this->modulation().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.modulation");
+      "piscan_pb.ScannerContext.modulation");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->modulation(), output);
   }
@@ -533,7 +537,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->entryindex().data(), static_cast<int>(this->entryindex().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.entryIndex");
+      "piscan_pb.ScannerContext.entryIndex");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       6, this->entryindex(), output);
   }
@@ -542,16 +546,16 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:ScannerContext)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.ScannerContext)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* ScannerContext::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ScannerContext)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.ScannerContext)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ScannerContext.State state = 1;
+  // .piscan_pb.ScannerContext.State state = 1;
   if (this->state() != 0) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->state(), target);
@@ -567,7 +571,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->systemtag().data(), static_cast<int>(this->systemtag().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.systemTag");
+      "piscan_pb.ScannerContext.systemTag");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         3, this->systemtag(), target);
@@ -578,7 +582,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->entrytag().data(), static_cast<int>(this->entrytag().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.entryTag");
+      "piscan_pb.ScannerContext.entryTag");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         4, this->entrytag(), target);
@@ -589,7 +593,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->modulation().data(), static_cast<int>(this->modulation().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.modulation");
+      "piscan_pb.ScannerContext.modulation");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         5, this->modulation(), target);
@@ -600,7 +604,7 @@ void ScannerContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->entryindex().data(), static_cast<int>(this->entryindex().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ScannerContext.entryIndex");
+      "piscan_pb.ScannerContext.entryIndex");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         6, this->entryindex(), target);
@@ -610,12 +614,12 @@ void ScannerContext::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:ScannerContext)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.ScannerContext)
   return target;
 }
 
 size_t ScannerContext::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ScannerContext)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.ScannerContext)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -662,7 +666,7 @@ size_t ScannerContext::ByteSizeLong() const {
         this->freq());
   }
 
-  // .ScannerContext.State state = 1;
+  // .piscan_pb.ScannerContext.State state = 1;
   if (this->state() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->state());
@@ -674,22 +678,22 @@ size_t ScannerContext::ByteSizeLong() const {
 }
 
 void ScannerContext::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ScannerContext)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.ScannerContext)
   GOOGLE_DCHECK_NE(&from, this);
   const ScannerContext* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ScannerContext>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ScannerContext)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.ScannerContext)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ScannerContext)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.ScannerContext)
     MergeFrom(*source);
   }
 }
 
 void ScannerContext::MergeFrom(const ScannerContext& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ScannerContext)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.ScannerContext)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -720,14 +724,14 @@ void ScannerContext::MergeFrom(const ScannerContext& from) {
 }
 
 void ScannerContext::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ScannerContext)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.ScannerContext)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void ScannerContext::CopyFrom(const ScannerContext& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ScannerContext)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.ScannerContext)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -778,7 +782,7 @@ const int DemodContext::kGainFieldNumber;
 DemodContext::DemodContext()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DemodContext)
+  // @@protoc_insertion_point(constructor:piscan_pb.DemodContext)
 }
 DemodContext::DemodContext(const DemodContext& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -787,7 +791,7 @@ DemodContext::DemodContext(const DemodContext& from)
   ::memcpy(&squelch_, &from.squelch_,
     static_cast<size_t>(reinterpret_cast<char*>(&gain_) -
     reinterpret_cast<char*>(&squelch_)) + sizeof(gain_));
-  // @@protoc_insertion_point(copy_constructor:DemodContext)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.DemodContext)
 }
 
 void DemodContext::SharedCtor() {
@@ -797,7 +801,7 @@ void DemodContext::SharedCtor() {
 }
 
 DemodContext::~DemodContext() {
-  // @@protoc_insertion_point(destructor:DemodContext)
+  // @@protoc_insertion_point(destructor:piscan_pb.DemodContext)
   SharedDtor();
 }
 
@@ -814,7 +818,7 @@ const DemodContext& DemodContext::default_instance() {
 
 
 void DemodContext::Clear() {
-// @@protoc_insertion_point(message_clear_start:DemodContext)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.DemodContext)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -865,7 +869,7 @@ bool DemodContext::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DemodContext)
+  // @@protoc_insertion_point(parse_start:piscan_pb.DemodContext)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -909,10 +913,10 @@ bool DemodContext::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DemodContext)
+  // @@protoc_insertion_point(parse_success:piscan_pb.DemodContext)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DemodContext)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.DemodContext)
   return false;
 #undef DO_
 }
@@ -920,7 +924,7 @@ failure:
 
 void DemodContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DemodContext)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.DemodContext)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -938,12 +942,12 @@ void DemodContext::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DemodContext)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.DemodContext)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* DemodContext::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DemodContext)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.DemodContext)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -961,12 +965,12 @@ void DemodContext::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DemodContext)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.DemodContext)
   return target;
 }
 
 size_t DemodContext::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DemodContext)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.DemodContext)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -996,22 +1000,22 @@ size_t DemodContext::ByteSizeLong() const {
 }
 
 void DemodContext::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:DemodContext)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.DemodContext)
   GOOGLE_DCHECK_NE(&from, this);
   const DemodContext* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DemodContext>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DemodContext)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.DemodContext)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:DemodContext)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.DemodContext)
     MergeFrom(*source);
   }
 }
 
 void DemodContext::MergeFrom(const DemodContext& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DemodContext)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.DemodContext)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1026,14 +1030,14 @@ void DemodContext::MergeFrom(const DemodContext& from) {
 }
 
 void DemodContext::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:DemodContext)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.DemodContext)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DemodContext::CopyFrom(const DemodContext& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DemodContext)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.DemodContext)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1076,7 +1080,7 @@ const int GeneralMessage::kContentFieldNumber;
 GeneralMessage::GeneralMessage()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:GeneralMessage)
+  // @@protoc_insertion_point(constructor:piscan_pb.GeneralMessage)
 }
 GeneralMessage::GeneralMessage(const GeneralMessage& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -1087,7 +1091,7 @@ GeneralMessage::GeneralMessage(const GeneralMessage& from)
     content_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.content_);
   }
   type_ = from.type_;
-  // @@protoc_insertion_point(copy_constructor:GeneralMessage)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.GeneralMessage)
 }
 
 void GeneralMessage::SharedCtor() {
@@ -1098,7 +1102,7 @@ void GeneralMessage::SharedCtor() {
 }
 
 GeneralMessage::~GeneralMessage() {
-  // @@protoc_insertion_point(destructor:GeneralMessage)
+  // @@protoc_insertion_point(destructor:piscan_pb.GeneralMessage)
   SharedDtor();
 }
 
@@ -1116,7 +1120,7 @@ const GeneralMessage& GeneralMessage::default_instance() {
 
 
 void GeneralMessage::Clear() {
-// @@protoc_insertion_point(message_clear_start:GeneralMessage)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.GeneralMessage)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1133,18 +1137,18 @@ const char* GeneralMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .GeneralMessage.Type type = 1;
+      // .piscan_pb.GeneralMessage.Type type = 1;
       case 1: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
         ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        set_type(static_cast<::GeneralMessage_Type>(val));
+        set_type(static_cast<::piscan_pb::GeneralMessage_Type>(val));
         break;
       }
       // string content = 2;
       case 2: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_content(), ptr, ctx, "GeneralMessage.content");
+        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_content(), ptr, ctx, "piscan_pb.GeneralMessage.content");
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -1167,20 +1171,20 @@ bool GeneralMessage::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:GeneralMessage)
+  // @@protoc_insertion_point(parse_start:piscan_pb.GeneralMessage)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .GeneralMessage.Type type = 1;
+      // .piscan_pb.GeneralMessage.Type type = 1;
       case 1: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
           int value = 0;
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_type(static_cast< ::GeneralMessage_Type >(value));
+          set_type(static_cast< ::piscan_pb::GeneralMessage_Type >(value));
         } else {
           goto handle_unusual;
         }
@@ -1195,7 +1199,7 @@ bool GeneralMessage::MergePartialFromCodedStream(
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->content().data(), static_cast<int>(this->content().length()),
             ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "GeneralMessage.content"));
+            "piscan_pb.GeneralMessage.content"));
         } else {
           goto handle_unusual;
         }
@@ -1214,10 +1218,10 @@ bool GeneralMessage::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:GeneralMessage)
+  // @@protoc_insertion_point(parse_success:piscan_pb.GeneralMessage)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:GeneralMessage)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.GeneralMessage)
   return false;
 #undef DO_
 }
@@ -1225,11 +1229,11 @@ failure:
 
 void GeneralMessage::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:GeneralMessage)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.GeneralMessage)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .GeneralMessage.Type type = 1;
+  // .piscan_pb.GeneralMessage.Type type = 1;
   if (this->type() != 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
@@ -1240,7 +1244,7 @@ void GeneralMessage::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->content().data(), static_cast<int>(this->content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "GeneralMessage.content");
+      "piscan_pb.GeneralMessage.content");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->content(), output);
   }
@@ -1249,16 +1253,16 @@ void GeneralMessage::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:GeneralMessage)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.GeneralMessage)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* GeneralMessage::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:GeneralMessage)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.GeneralMessage)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .GeneralMessage.Type type = 1;
+  // .piscan_pb.GeneralMessage.Type type = 1;
   if (this->type() != 0) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->type(), target);
@@ -1269,7 +1273,7 @@ void GeneralMessage::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->content().data(), static_cast<int>(this->content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "GeneralMessage.content");
+      "piscan_pb.GeneralMessage.content");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         2, this->content(), target);
@@ -1279,12 +1283,12 @@ void GeneralMessage::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:GeneralMessage)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.GeneralMessage)
   return target;
 }
 
 size_t GeneralMessage::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:GeneralMessage)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.GeneralMessage)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1303,7 +1307,7 @@ size_t GeneralMessage::ByteSizeLong() const {
         this->content());
   }
 
-  // .GeneralMessage.Type type = 1;
+  // .piscan_pb.GeneralMessage.Type type = 1;
   if (this->type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->type());
@@ -1315,22 +1319,22 @@ size_t GeneralMessage::ByteSizeLong() const {
 }
 
 void GeneralMessage::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:GeneralMessage)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.GeneralMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const GeneralMessage* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GeneralMessage>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:GeneralMessage)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.GeneralMessage)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:GeneralMessage)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.GeneralMessage)
     MergeFrom(*source);
   }
 }
 
 void GeneralMessage::MergeFrom(const GeneralMessage& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:GeneralMessage)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.GeneralMessage)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1346,14 +1350,14 @@ void GeneralMessage::MergeFrom(const GeneralMessage& from) {
 }
 
 void GeneralMessage::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:GeneralMessage)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.GeneralMessage)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void GeneralMessage::CopyFrom(const GeneralMessage& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:GeneralMessage)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.GeneralMessage)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1382,15 +1386,16 @@ void GeneralMessage::InternalSwap(GeneralMessage* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace piscan_pb
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::ScannerContext* Arena::CreateMaybeMessage< ::ScannerContext >(Arena* arena) {
-  return Arena::CreateInternal< ::ScannerContext >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::ScannerContext* Arena::CreateMaybeMessage< ::piscan_pb::ScannerContext >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::ScannerContext >(arena);
 }
-template<> PROTOBUF_NOINLINE ::DemodContext* Arena::CreateMaybeMessage< ::DemodContext >(Arena* arena) {
-  return Arena::CreateInternal< ::DemodContext >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::DemodContext* Arena::CreateMaybeMessage< ::piscan_pb::DemodContext >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::DemodContext >(arena);
 }
-template<> PROTOBUF_NOINLINE ::GeneralMessage* Arena::CreateMaybeMessage< ::GeneralMessage >(Arena* arena) {
-  return Arena::CreateInternal< ::GeneralMessage >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::GeneralMessage* Arena::CreateMaybeMessage< ::piscan_pb::GeneralMessage >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::GeneralMessage >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

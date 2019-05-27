@@ -54,6 +54,7 @@ struct TableStruct_request_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 void AddDescriptors_request_2eproto();
+namespace piscan_pb {
 class DemodRequest;
 class DemodRequestDefaultTypeInternal;
 extern DemodRequestDefaultTypeInternal _DemodRequest_default_instance_;
@@ -63,11 +64,13 @@ extern GeneralRequestDefaultTypeInternal _GeneralRequest_default_instance_;
 class ScannerStateRequest;
 class ScannerStateRequestDefaultTypeInternal;
 extern ScannerStateRequestDefaultTypeInternal _ScannerStateRequest_default_instance_;
+}  // namespace piscan_pb
 PROTOBUF_NAMESPACE_OPEN
-template<> ::DemodRequest* Arena::CreateMaybeMessage<::DemodRequest>(Arena*);
-template<> ::GeneralRequest* Arena::CreateMaybeMessage<::GeneralRequest>(Arena*);
-template<> ::ScannerStateRequest* Arena::CreateMaybeMessage<::ScannerStateRequest>(Arena*);
+template<> ::piscan_pb::DemodRequest* Arena::CreateMaybeMessage<::piscan_pb::DemodRequest>(Arena*);
+template<> ::piscan_pb::GeneralRequest* Arena::CreateMaybeMessage<::piscan_pb::GeneralRequest>(Arena*);
+template<> ::piscan_pb::ScannerStateRequest* Arena::CreateMaybeMessage<::piscan_pb::ScannerStateRequest>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
+namespace piscan_pb {
 
 enum GeneralRequest_RequestType {
   GeneralRequest_RequestType_SCANNER_CONTEXT = 0,
@@ -136,7 +139,7 @@ inline bool DemodRequest_DemodFunc_Parse(
 // ===================================================================
 
 class GeneralRequest final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GeneralRequest) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.GeneralRequest) */ {
  public:
   GeneralRequest();
   virtual ~GeneralRequest();
@@ -214,7 +217,7 @@ class GeneralRequest final :
   void InternalSwap(GeneralRequest* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "GeneralRequest";
+    return "piscan_pb.GeneralRequest";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -263,13 +266,13 @@ class GeneralRequest final :
   ::PROTOBUF_NAMESPACE_ID::int32 handle() const;
   void set_handle(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // .GeneralRequest.RequestType type = 2;
+  // .piscan_pb.GeneralRequest.RequestType type = 2;
   void clear_type();
   static const int kTypeFieldNumber = 2;
-  ::GeneralRequest_RequestType type() const;
-  void set_type(::GeneralRequest_RequestType value);
+  ::piscan_pb::GeneralRequest_RequestType type() const;
+  void set_type(::piscan_pb::GeneralRequest_RequestType value);
 
-  // @@protoc_insertion_point(class_scope:GeneralRequest)
+  // @@protoc_insertion_point(class_scope:piscan_pb.GeneralRequest)
  private:
   class HasBitSetters;
 
@@ -282,7 +285,7 @@ class GeneralRequest final :
 // -------------------------------------------------------------------
 
 class ScannerStateRequest final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ScannerStateRequest) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.ScannerStateRequest) */ {
  public:
   ScannerStateRequest();
   virtual ~ScannerStateRequest();
@@ -360,7 +363,7 @@ class ScannerStateRequest final :
   void InternalSwap(ScannerStateRequest* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "ScannerStateRequest";
+    return "piscan_pb.ScannerStateRequest";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -411,11 +414,11 @@ class ScannerStateRequest final :
   ::PROTOBUF_NAMESPACE_ID::int32 handle() const;
   void set_handle(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // .ScannerStateRequest.NewState state = 2;
+  // .piscan_pb.ScannerStateRequest.NewState state = 2;
   void clear_state();
   static const int kStateFieldNumber = 2;
-  ::ScannerStateRequest_NewState state() const;
-  void set_state(::ScannerStateRequest_NewState value);
+  ::piscan_pb::ScannerStateRequest_NewState state() const;
+  void set_state(::piscan_pb::ScannerStateRequest_NewState value);
 
   // uint64 manFreq = 3;
   void clear_manfreq();
@@ -423,7 +426,7 @@ class ScannerStateRequest final :
   ::PROTOBUF_NAMESPACE_ID::uint64 manfreq() const;
   void set_manfreq(::PROTOBUF_NAMESPACE_ID::uint64 value);
 
-  // @@protoc_insertion_point(class_scope:ScannerStateRequest)
+  // @@protoc_insertion_point(class_scope:piscan_pb.ScannerStateRequest)
  private:
   class HasBitSetters;
 
@@ -437,7 +440,7 @@ class ScannerStateRequest final :
 // -------------------------------------------------------------------
 
 class DemodRequest final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:DemodRequest) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:piscan_pb.DemodRequest) */ {
  public:
   DemodRequest();
   virtual ~DemodRequest();
@@ -515,7 +518,7 @@ class DemodRequest final :
   void InternalSwap(DemodRequest* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "DemodRequest";
+    return "piscan_pb.DemodRequest";
   }
   private:
   inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
@@ -564,18 +567,25 @@ class DemodRequest final :
   ::PROTOBUF_NAMESPACE_ID::int32 handle() const;
   void set_handle(::PROTOBUF_NAMESPACE_ID::int32 value);
 
-  // float level = 2;
+  // .piscan_pb.DemodRequest.DemodFunc type = 2;
+  void clear_type();
+  static const int kTypeFieldNumber = 2;
+  ::piscan_pb::DemodRequest_DemodFunc type() const;
+  void set_type(::piscan_pb::DemodRequest_DemodFunc value);
+
+  // float level = 3;
   void clear_level();
-  static const int kLevelFieldNumber = 2;
+  static const int kLevelFieldNumber = 3;
   float level() const;
   void set_level(float value);
 
-  // @@protoc_insertion_point(class_scope:DemodRequest)
+  // @@protoc_insertion_point(class_scope:piscan_pb.DemodRequest)
  private:
   class HasBitSetters;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::int32 handle_;
+  int type_;
   float level_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_request_2eproto;
@@ -596,27 +606,27 @@ inline void GeneralRequest::clear_handle() {
   handle_ = 0;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 GeneralRequest::handle() const {
-  // @@protoc_insertion_point(field_get:GeneralRequest.handle)
+  // @@protoc_insertion_point(field_get:piscan_pb.GeneralRequest.handle)
   return handle_;
 }
 inline void GeneralRequest::set_handle(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   handle_ = value;
-  // @@protoc_insertion_point(field_set:GeneralRequest.handle)
+  // @@protoc_insertion_point(field_set:piscan_pb.GeneralRequest.handle)
 }
 
-// .GeneralRequest.RequestType type = 2;
+// .piscan_pb.GeneralRequest.RequestType type = 2;
 inline void GeneralRequest::clear_type() {
   type_ = 0;
 }
-inline ::GeneralRequest_RequestType GeneralRequest::type() const {
-  // @@protoc_insertion_point(field_get:GeneralRequest.type)
-  return static_cast< ::GeneralRequest_RequestType >(type_);
+inline ::piscan_pb::GeneralRequest_RequestType GeneralRequest::type() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.GeneralRequest.type)
+  return static_cast< ::piscan_pb::GeneralRequest_RequestType >(type_);
 }
-inline void GeneralRequest::set_type(::GeneralRequest_RequestType value) {
+inline void GeneralRequest::set_type(::piscan_pb::GeneralRequest_RequestType value) {
   
   type_ = value;
-  // @@protoc_insertion_point(field_set:GeneralRequest.type)
+  // @@protoc_insertion_point(field_set:piscan_pb.GeneralRequest.type)
 }
 
 // -------------------------------------------------------------------
@@ -628,27 +638,27 @@ inline void ScannerStateRequest::clear_handle() {
   handle_ = 0;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 ScannerStateRequest::handle() const {
-  // @@protoc_insertion_point(field_get:ScannerStateRequest.handle)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerStateRequest.handle)
   return handle_;
 }
 inline void ScannerStateRequest::set_handle(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   handle_ = value;
-  // @@protoc_insertion_point(field_set:ScannerStateRequest.handle)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerStateRequest.handle)
 }
 
-// .ScannerStateRequest.NewState state = 2;
+// .piscan_pb.ScannerStateRequest.NewState state = 2;
 inline void ScannerStateRequest::clear_state() {
   state_ = 0;
 }
-inline ::ScannerStateRequest_NewState ScannerStateRequest::state() const {
-  // @@protoc_insertion_point(field_get:ScannerStateRequest.state)
-  return static_cast< ::ScannerStateRequest_NewState >(state_);
+inline ::piscan_pb::ScannerStateRequest_NewState ScannerStateRequest::state() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerStateRequest.state)
+  return static_cast< ::piscan_pb::ScannerStateRequest_NewState >(state_);
 }
-inline void ScannerStateRequest::set_state(::ScannerStateRequest_NewState value) {
+inline void ScannerStateRequest::set_state(::piscan_pb::ScannerStateRequest_NewState value) {
   
   state_ = value;
-  // @@protoc_insertion_point(field_set:ScannerStateRequest.state)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerStateRequest.state)
 }
 
 // uint64 manFreq = 3;
@@ -656,13 +666,13 @@ inline void ScannerStateRequest::clear_manfreq() {
   manfreq_ = PROTOBUF_ULONGLONG(0);
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint64 ScannerStateRequest::manfreq() const {
-  // @@protoc_insertion_point(field_get:ScannerStateRequest.manFreq)
+  // @@protoc_insertion_point(field_get:piscan_pb.ScannerStateRequest.manFreq)
   return manfreq_;
 }
 inline void ScannerStateRequest::set_manfreq(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   
   manfreq_ = value;
-  // @@protoc_insertion_point(field_set:ScannerStateRequest.manFreq)
+  // @@protoc_insertion_point(field_set:piscan_pb.ScannerStateRequest.manFreq)
 }
 
 // -------------------------------------------------------------------
@@ -674,27 +684,41 @@ inline void DemodRequest::clear_handle() {
   handle_ = 0;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 DemodRequest::handle() const {
-  // @@protoc_insertion_point(field_get:DemodRequest.handle)
+  // @@protoc_insertion_point(field_get:piscan_pb.DemodRequest.handle)
   return handle_;
 }
 inline void DemodRequest::set_handle(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   handle_ = value;
-  // @@protoc_insertion_point(field_set:DemodRequest.handle)
+  // @@protoc_insertion_point(field_set:piscan_pb.DemodRequest.handle)
 }
 
-// float level = 2;
+// .piscan_pb.DemodRequest.DemodFunc type = 2;
+inline void DemodRequest::clear_type() {
+  type_ = 0;
+}
+inline ::piscan_pb::DemodRequest_DemodFunc DemodRequest::type() const {
+  // @@protoc_insertion_point(field_get:piscan_pb.DemodRequest.type)
+  return static_cast< ::piscan_pb::DemodRequest_DemodFunc >(type_);
+}
+inline void DemodRequest::set_type(::piscan_pb::DemodRequest_DemodFunc value) {
+  
+  type_ = value;
+  // @@protoc_insertion_point(field_set:piscan_pb.DemodRequest.type)
+}
+
+// float level = 3;
 inline void DemodRequest::clear_level() {
   level_ = 0;
 }
 inline float DemodRequest::level() const {
-  // @@protoc_insertion_point(field_get:DemodRequest.level)
+  // @@protoc_insertion_point(field_get:piscan_pb.DemodRequest.level)
   return level_;
 }
 inline void DemodRequest::set_level(float value) {
   
   level_ = value;
-  // @@protoc_insertion_point(field_set:DemodRequest.level)
+  // @@protoc_insertion_point(field_set:piscan_pb.DemodRequest.level)
 }
 
 #ifdef __GNUC__
@@ -707,23 +731,24 @@ inline void DemodRequest::set_level(float value) {
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace piscan_pb
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::GeneralRequest_RequestType> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::GeneralRequest_RequestType> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::GeneralRequest_RequestType>() {
-  return ::GeneralRequest_RequestType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::GeneralRequest_RequestType>() {
+  return ::piscan_pb::GeneralRequest_RequestType_descriptor();
 }
-template <> struct is_proto_enum< ::ScannerStateRequest_NewState> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::ScannerStateRequest_NewState> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::ScannerStateRequest_NewState>() {
-  return ::ScannerStateRequest_NewState_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::ScannerStateRequest_NewState>() {
+  return ::piscan_pb::ScannerStateRequest_NewState_descriptor();
 }
-template <> struct is_proto_enum< ::DemodRequest_DemodFunc> : ::std::true_type {};
+template <> struct is_proto_enum< ::piscan_pb::DemodRequest_DemodFunc> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::DemodRequest_DemodFunc>() {
-  return ::DemodRequest_DemodFunc_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::piscan_pb::DemodRequest_DemodFunc>() {
+  return ::piscan_pb::DemodRequest_DemodFunc_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

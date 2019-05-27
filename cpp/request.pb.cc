@@ -16,6 +16,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
+namespace piscan_pb {
 class GeneralRequestDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GeneralRequest> _instance;
@@ -28,15 +29,16 @@ class DemodRequestDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<DemodRequest> _instance;
 } _DemodRequest_default_instance_;
+}  // namespace piscan_pb
 static void InitDefaultsGeneralRequest_request_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_GeneralRequest_default_instance_;
-    new (ptr) ::GeneralRequest();
+    void* ptr = &::piscan_pb::_GeneralRequest_default_instance_;
+    new (ptr) ::piscan_pb::GeneralRequest();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::GeneralRequest::InitAsDefaultInstance();
+  ::piscan_pb::GeneralRequest::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GeneralRequest_request_2eproto =
@@ -46,11 +48,11 @@ static void InitDefaultsScannerStateRequest_request_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ScannerStateRequest_default_instance_;
-    new (ptr) ::ScannerStateRequest();
+    void* ptr = &::piscan_pb::_ScannerStateRequest_default_instance_;
+    new (ptr) ::piscan_pb::ScannerStateRequest();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ScannerStateRequest::InitAsDefaultInstance();
+  ::piscan_pb::ScannerStateRequest::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerStateRequest_request_2eproto =
@@ -60,11 +62,11 @@ static void InitDefaultsDemodRequest_request_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_DemodRequest_default_instance_;
-    new (ptr) ::DemodRequest();
+    void* ptr = &::piscan_pb::_DemodRequest_default_instance_;
+    new (ptr) ::piscan_pb::DemodRequest();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DemodRequest::InitAsDefaultInstance();
+  ::piscan_pb::DemodRequest::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DemodRequest_request_2eproto =
@@ -82,38 +84,39 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_request_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::GeneralRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::GeneralRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::GeneralRequest, handle_),
-  PROTOBUF_FIELD_OFFSET(::GeneralRequest, type_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::GeneralRequest, handle_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::GeneralRequest, type_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ScannerStateRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerStateRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ScannerStateRequest, handle_),
-  PROTOBUF_FIELD_OFFSET(::ScannerStateRequest, state_),
-  PROTOBUF_FIELD_OFFSET(::ScannerStateRequest, manfreq_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerStateRequest, handle_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerStateRequest, state_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::ScannerStateRequest, manfreq_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::DemodRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::DemodRequest, handle_),
-  PROTOBUF_FIELD_OFFSET(::DemodRequest, level_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodRequest, handle_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodRequest, type_),
+  PROTOBUF_FIELD_OFFSET(::piscan_pb::DemodRequest, level_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::GeneralRequest)},
-  { 7, -1, sizeof(::ScannerStateRequest)},
-  { 15, -1, sizeof(::DemodRequest)},
+  { 0, -1, sizeof(::piscan_pb::GeneralRequest)},
+  { 7, -1, sizeof(::piscan_pb::ScannerStateRequest)},
+  { 15, -1, sizeof(::piscan_pb::DemodRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GeneralRequest_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ScannerStateRequest_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_DemodRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_GeneralRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_ScannerStateRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::piscan_pb::_DemodRequest_default_instance_),
 };
 
 static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descriptors_table_request_2eproto = {
@@ -123,21 +126,23 @@ static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descript
 };
 
 const char descriptor_table_protodef_request_2eproto[] =
-  "\n\rrequest.proto\"\202\001\n\016GeneralRequest\022\016\n\006ha"
-  "ndle\030\001 \001(\005\022)\n\004type\030\002 \001(\0162\033.GeneralReques"
-  "t.RequestType\"5\n\013RequestType\022\023\n\017SCANNER_"
-  "CONTEXT\020\000\022\021\n\rDEMOD_CONTEXT\020\001\"\220\001\n\023Scanner"
-  "StateRequest\022\016\n\006handle\030\001 \001(\005\022,\n\005state\030\002 "
-  "\001(\0162\035.ScannerStateRequest.NewState\022\017\n\007ma"
-  "nFreq\030\003 \001(\004\"*\n\010NewState\022\010\n\004SCAN\020\000\022\010\n\004HOL"
-  "D\020\001\022\n\n\006MANUAL\020\002\"Y\n\014DemodRequest\022\016\n\006handl"
-  "e\030\001 \001(\005\022\r\n\005level\030\002 \001(\002\"*\n\tDemodFunc\022\017\n\013S"
-  "ET_SQUELCH\020\000\022\014\n\010SET_GAIN\020\001b\006proto3"
+  "\n\rrequest.proto\022\tpiscan_pb\"\214\001\n\016GeneralRe"
+  "quest\022\016\n\006handle\030\001 \001(\005\0223\n\004type\030\002 \001(\0162%.pi"
+  "scan_pb.GeneralRequest.RequestType\"5\n\013Re"
+  "questType\022\023\n\017SCANNER_CONTEXT\020\000\022\021\n\rDEMOD_"
+  "CONTEXT\020\001\"\232\001\n\023ScannerStateRequest\022\016\n\006han"
+  "dle\030\001 \001(\005\0226\n\005state\030\002 \001(\0162\'.piscan_pb.Sca"
+  "nnerStateRequest.NewState\022\017\n\007manFreq\030\003 \001"
+  "(\004\"*\n\010NewState\022\010\n\004SCAN\020\000\022\010\n\004HOLD\020\001\022\n\n\006MA"
+  "NUAL\020\002\"\212\001\n\014DemodRequest\022\016\n\006handle\030\001 \001(\005\022"
+  "/\n\004type\030\002 \001(\0162!.piscan_pb.DemodRequest.D"
+  "emodFunc\022\r\n\005level\030\003 \001(\002\"*\n\tDemodFunc\022\017\n\013"
+  "SET_SQUELCH\020\000\022\014\n\010SET_GAIN\020\001b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_request_2eproto = {
   false, InitDefaults_request_2eproto, 
   descriptor_table_protodef_request_2eproto,
-  "request.proto", &assign_descriptors_table_request_2eproto, 394,
+  "request.proto", &assign_descriptors_table_request_2eproto, 475,
 };
 
 void AddDescriptors_request_2eproto() {
@@ -149,6 +154,7 @@ void AddDescriptors_request_2eproto() {
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_request_2eproto = []() { AddDescriptors_request_2eproto(); return true; }();
+namespace piscan_pb {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* GeneralRequest_RequestType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_request_2eproto);
   return file_level_enum_descriptors_request_2eproto[0];
@@ -231,7 +237,7 @@ const int GeneralRequest::kTypeFieldNumber;
 GeneralRequest::GeneralRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:GeneralRequest)
+  // @@protoc_insertion_point(constructor:piscan_pb.GeneralRequest)
 }
 GeneralRequest::GeneralRequest(const GeneralRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -240,7 +246,7 @@ GeneralRequest::GeneralRequest(const GeneralRequest& from)
   ::memcpy(&handle_, &from.handle_,
     static_cast<size_t>(reinterpret_cast<char*>(&type_) -
     reinterpret_cast<char*>(&handle_)) + sizeof(type_));
-  // @@protoc_insertion_point(copy_constructor:GeneralRequest)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.GeneralRequest)
 }
 
 void GeneralRequest::SharedCtor() {
@@ -250,7 +256,7 @@ void GeneralRequest::SharedCtor() {
 }
 
 GeneralRequest::~GeneralRequest() {
-  // @@protoc_insertion_point(destructor:GeneralRequest)
+  // @@protoc_insertion_point(destructor:piscan_pb.GeneralRequest)
   SharedDtor();
 }
 
@@ -267,7 +273,7 @@ const GeneralRequest& GeneralRequest::default_instance() {
 
 
 void GeneralRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:GeneralRequest)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.GeneralRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -292,12 +298,12 @@ const char* GeneralRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .GeneralRequest.RequestType type = 2;
+      // .piscan_pb.GeneralRequest.RequestType type = 2;
       case 2: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
         ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        set_type(static_cast<::GeneralRequest_RequestType>(val));
+        set_type(static_cast<::piscan_pb::GeneralRequest_RequestType>(val));
         break;
       }
       default: {
@@ -319,7 +325,7 @@ bool GeneralRequest::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:GeneralRequest)
+  // @@protoc_insertion_point(parse_start:piscan_pb.GeneralRequest)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -338,14 +344,14 @@ bool GeneralRequest::MergePartialFromCodedStream(
         break;
       }
 
-      // .GeneralRequest.RequestType type = 2;
+      // .piscan_pb.GeneralRequest.RequestType type = 2;
       case 2: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
           int value = 0;
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_type(static_cast< ::GeneralRequest_RequestType >(value));
+          set_type(static_cast< ::piscan_pb::GeneralRequest_RequestType >(value));
         } else {
           goto handle_unusual;
         }
@@ -364,10 +370,10 @@ bool GeneralRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:GeneralRequest)
+  // @@protoc_insertion_point(parse_success:piscan_pb.GeneralRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:GeneralRequest)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.GeneralRequest)
   return false;
 #undef DO_
 }
@@ -375,7 +381,7 @@ failure:
 
 void GeneralRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:GeneralRequest)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.GeneralRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -384,7 +390,7 @@ void GeneralRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->handle(), output);
   }
 
-  // .GeneralRequest.RequestType type = 2;
+  // .piscan_pb.GeneralRequest.RequestType type = 2;
   if (this->type() != 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
       2, this->type(), output);
@@ -394,12 +400,12 @@ void GeneralRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:GeneralRequest)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.GeneralRequest)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* GeneralRequest::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:GeneralRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.GeneralRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -408,7 +414,7 @@ void GeneralRequest::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->handle(), target);
   }
 
-  // .GeneralRequest.RequestType type = 2;
+  // .piscan_pb.GeneralRequest.RequestType type = 2;
   if (this->type() != 0) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       2, this->type(), target);
@@ -418,12 +424,12 @@ void GeneralRequest::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:GeneralRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.GeneralRequest)
   return target;
 }
 
 size_t GeneralRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:GeneralRequest)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.GeneralRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -442,7 +448,7 @@ size_t GeneralRequest::ByteSizeLong() const {
         this->handle());
   }
 
-  // .GeneralRequest.RequestType type = 2;
+  // .piscan_pb.GeneralRequest.RequestType type = 2;
   if (this->type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->type());
@@ -454,22 +460,22 @@ size_t GeneralRequest::ByteSizeLong() const {
 }
 
 void GeneralRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:GeneralRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.GeneralRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const GeneralRequest* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GeneralRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:GeneralRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.GeneralRequest)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:GeneralRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.GeneralRequest)
     MergeFrom(*source);
   }
 }
 
 void GeneralRequest::MergeFrom(const GeneralRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:GeneralRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.GeneralRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -484,14 +490,14 @@ void GeneralRequest::MergeFrom(const GeneralRequest& from) {
 }
 
 void GeneralRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:GeneralRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.GeneralRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void GeneralRequest::CopyFrom(const GeneralRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:GeneralRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.GeneralRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -535,7 +541,7 @@ const int ScannerStateRequest::kManFreqFieldNumber;
 ScannerStateRequest::ScannerStateRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ScannerStateRequest)
+  // @@protoc_insertion_point(constructor:piscan_pb.ScannerStateRequest)
 }
 ScannerStateRequest::ScannerStateRequest(const ScannerStateRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -544,7 +550,7 @@ ScannerStateRequest::ScannerStateRequest(const ScannerStateRequest& from)
   ::memcpy(&handle_, &from.handle_,
     static_cast<size_t>(reinterpret_cast<char*>(&manfreq_) -
     reinterpret_cast<char*>(&handle_)) + sizeof(manfreq_));
-  // @@protoc_insertion_point(copy_constructor:ScannerStateRequest)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.ScannerStateRequest)
 }
 
 void ScannerStateRequest::SharedCtor() {
@@ -554,7 +560,7 @@ void ScannerStateRequest::SharedCtor() {
 }
 
 ScannerStateRequest::~ScannerStateRequest() {
-  // @@protoc_insertion_point(destructor:ScannerStateRequest)
+  // @@protoc_insertion_point(destructor:piscan_pb.ScannerStateRequest)
   SharedDtor();
 }
 
@@ -571,7 +577,7 @@ const ScannerStateRequest& ScannerStateRequest::default_instance() {
 
 
 void ScannerStateRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:ScannerStateRequest)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.ScannerStateRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -596,12 +602,12 @@ const char* ScannerStateRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAME
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .ScannerStateRequest.NewState state = 2;
+      // .piscan_pb.ScannerStateRequest.NewState state = 2;
       case 2: {
         if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
         ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        set_state(static_cast<::ScannerStateRequest_NewState>(val));
+        set_state(static_cast<::piscan_pb::ScannerStateRequest_NewState>(val));
         break;
       }
       // uint64 manFreq = 3;
@@ -630,7 +636,7 @@ bool ScannerStateRequest::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ScannerStateRequest)
+  // @@protoc_insertion_point(parse_start:piscan_pb.ScannerStateRequest)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -649,14 +655,14 @@ bool ScannerStateRequest::MergePartialFromCodedStream(
         break;
       }
 
-      // .ScannerStateRequest.NewState state = 2;
+      // .piscan_pb.ScannerStateRequest.NewState state = 2;
       case 2: {
         if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
           int value = 0;
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_state(static_cast< ::ScannerStateRequest_NewState >(value));
+          set_state(static_cast< ::piscan_pb::ScannerStateRequest_NewState >(value));
         } else {
           goto handle_unusual;
         }
@@ -688,10 +694,10 @@ bool ScannerStateRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:ScannerStateRequest)
+  // @@protoc_insertion_point(parse_success:piscan_pb.ScannerStateRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:ScannerStateRequest)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.ScannerStateRequest)
   return false;
 #undef DO_
 }
@@ -699,7 +705,7 @@ failure:
 
 void ScannerStateRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ScannerStateRequest)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.ScannerStateRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -708,7 +714,7 @@ void ScannerStateRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->handle(), output);
   }
 
-  // .ScannerStateRequest.NewState state = 2;
+  // .piscan_pb.ScannerStateRequest.NewState state = 2;
   if (this->state() != 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
       2, this->state(), output);
@@ -723,12 +729,12 @@ void ScannerStateRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:ScannerStateRequest)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.ScannerStateRequest)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* ScannerStateRequest::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ScannerStateRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.ScannerStateRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -737,7 +743,7 @@ void ScannerStateRequest::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->handle(), target);
   }
 
-  // .ScannerStateRequest.NewState state = 2;
+  // .piscan_pb.ScannerStateRequest.NewState state = 2;
   if (this->state() != 0) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       2, this->state(), target);
@@ -752,12 +758,12 @@ void ScannerStateRequest::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:ScannerStateRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.ScannerStateRequest)
   return target;
 }
 
 size_t ScannerStateRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ScannerStateRequest)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.ScannerStateRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -776,7 +782,7 @@ size_t ScannerStateRequest::ByteSizeLong() const {
         this->handle());
   }
 
-  // .ScannerStateRequest.NewState state = 2;
+  // .piscan_pb.ScannerStateRequest.NewState state = 2;
   if (this->state() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->state());
@@ -795,22 +801,22 @@ size_t ScannerStateRequest::ByteSizeLong() const {
 }
 
 void ScannerStateRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ScannerStateRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.ScannerStateRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const ScannerStateRequest* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ScannerStateRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ScannerStateRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.ScannerStateRequest)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ScannerStateRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.ScannerStateRequest)
     MergeFrom(*source);
   }
 }
 
 void ScannerStateRequest::MergeFrom(const ScannerStateRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ScannerStateRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.ScannerStateRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -828,14 +834,14 @@ void ScannerStateRequest::MergeFrom(const ScannerStateRequest& from) {
 }
 
 void ScannerStateRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ScannerStateRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.ScannerStateRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void ScannerStateRequest::CopyFrom(const ScannerStateRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ScannerStateRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.ScannerStateRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -873,13 +879,14 @@ class DemodRequest::HasBitSetters {
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DemodRequest::kHandleFieldNumber;
+const int DemodRequest::kTypeFieldNumber;
 const int DemodRequest::kLevelFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DemodRequest::DemodRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DemodRequest)
+  // @@protoc_insertion_point(constructor:piscan_pb.DemodRequest)
 }
 DemodRequest::DemodRequest(const DemodRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -888,7 +895,7 @@ DemodRequest::DemodRequest(const DemodRequest& from)
   ::memcpy(&handle_, &from.handle_,
     static_cast<size_t>(reinterpret_cast<char*>(&level_) -
     reinterpret_cast<char*>(&handle_)) + sizeof(level_));
-  // @@protoc_insertion_point(copy_constructor:DemodRequest)
+  // @@protoc_insertion_point(copy_constructor:piscan_pb.DemodRequest)
 }
 
 void DemodRequest::SharedCtor() {
@@ -898,7 +905,7 @@ void DemodRequest::SharedCtor() {
 }
 
 DemodRequest::~DemodRequest() {
-  // @@protoc_insertion_point(destructor:DemodRequest)
+  // @@protoc_insertion_point(destructor:piscan_pb.DemodRequest)
   SharedDtor();
 }
 
@@ -915,7 +922,7 @@ const DemodRequest& DemodRequest::default_instance() {
 
 
 void DemodRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:DemodRequest)
+// @@protoc_insertion_point(message_clear_start:piscan_pb.DemodRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -940,9 +947,17 @@ const char* DemodRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // float level = 2;
+      // .piscan_pb.DemodRequest.DemodFunc type = 2;
       case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 21) goto handle_unusual;
+        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
+        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        set_type(static_cast<::piscan_pb::DemodRequest_DemodFunc>(val));
+        break;
+      }
+      // float level = 3;
+      case 3: {
+        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 29) goto handle_unusual;
         set_level(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
         ptr += sizeof(float);
         break;
@@ -966,7 +981,7 @@ bool DemodRequest::MergePartialFromCodedStream(
     ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DemodRequest)
+  // @@protoc_insertion_point(parse_start:piscan_pb.DemodRequest)
   for (;;) {
     ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -985,9 +1000,23 @@ bool DemodRequest::MergePartialFromCodedStream(
         break;
       }
 
-      // float level = 2;
+      // .piscan_pb.DemodRequest.DemodFunc type = 2;
       case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (21 & 0xFF)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_type(static_cast< ::piscan_pb::DemodRequest_DemodFunc >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float level = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (29 & 0xFF)) {
 
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
@@ -1010,10 +1039,10 @@ bool DemodRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DemodRequest)
+  // @@protoc_insertion_point(parse_success:piscan_pb.DemodRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DemodRequest)
+  // @@protoc_insertion_point(parse_failure:piscan_pb.DemodRequest)
   return false;
 #undef DO_
 }
@@ -1021,7 +1050,7 @@ failure:
 
 void DemodRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DemodRequest)
+  // @@protoc_insertion_point(serialize_start:piscan_pb.DemodRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1030,21 +1059,27 @@ void DemodRequest::SerializeWithCachedSizes(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->handle(), output);
   }
 
-  // float level = 2;
+  // .piscan_pb.DemodRequest.DemodFunc type = 2;
+  if (this->type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      2, this->type(), output);
+  }
+
+  // float level = 3;
   if (this->level() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloat(2, this->level(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloat(3, this->level(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DemodRequest)
+  // @@protoc_insertion_point(serialize_end:piscan_pb.DemodRequest)
 }
 
 ::PROTOBUF_NAMESPACE_ID::uint8* DemodRequest::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DemodRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:piscan_pb.DemodRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1053,21 +1088,27 @@ void DemodRequest::SerializeWithCachedSizes(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->handle(), target);
   }
 
-  // float level = 2;
+  // .piscan_pb.DemodRequest.DemodFunc type = 2;
+  if (this->type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      2, this->type(), target);
+  }
+
+  // float level = 3;
   if (this->level() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->level(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->level(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DemodRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:piscan_pb.DemodRequest)
   return target;
 }
 
 size_t DemodRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DemodRequest)
+// @@protoc_insertion_point(message_byte_size_start:piscan_pb.DemodRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1086,7 +1127,13 @@ size_t DemodRequest::ByteSizeLong() const {
         this->handle());
   }
 
-  // float level = 2;
+  // .piscan_pb.DemodRequest.DemodFunc type = 2;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->type());
+  }
+
+  // float level = 3;
   if (this->level() != 0) {
     total_size += 1 + 4;
   }
@@ -1097,22 +1144,22 @@ size_t DemodRequest::ByteSizeLong() const {
 }
 
 void DemodRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:DemodRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:piscan_pb.DemodRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const DemodRequest* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DemodRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DemodRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:piscan_pb.DemodRequest)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:DemodRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:piscan_pb.DemodRequest)
     MergeFrom(*source);
   }
 }
 
 void DemodRequest::MergeFrom(const DemodRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DemodRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:piscan_pb.DemodRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1121,20 +1168,23 @@ void DemodRequest::MergeFrom(const DemodRequest& from) {
   if (from.handle() != 0) {
     set_handle(from.handle());
   }
+  if (from.type() != 0) {
+    set_type(from.type());
+  }
   if (from.level() != 0) {
     set_level(from.level());
   }
 }
 
 void DemodRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:DemodRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:piscan_pb.DemodRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DemodRequest::CopyFrom(const DemodRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DemodRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:piscan_pb.DemodRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1152,6 +1202,7 @@ void DemodRequest::InternalSwap(DemodRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(handle_, other->handle_);
+  swap(type_, other->type_);
   swap(level_, other->level_);
 }
 
@@ -1162,15 +1213,16 @@ void DemodRequest::InternalSwap(DemodRequest* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace piscan_pb
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::GeneralRequest* Arena::CreateMaybeMessage< ::GeneralRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::GeneralRequest >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::GeneralRequest* Arena::CreateMaybeMessage< ::piscan_pb::GeneralRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::GeneralRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::ScannerStateRequest* Arena::CreateMaybeMessage< ::ScannerStateRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::ScannerStateRequest >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::ScannerStateRequest* Arena::CreateMaybeMessage< ::piscan_pb::ScannerStateRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::ScannerStateRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::DemodRequest* Arena::CreateMaybeMessage< ::DemodRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::DemodRequest >(arena);
+template<> PROTOBUF_NOINLINE ::piscan_pb::DemodRequest* Arena::CreateMaybeMessage< ::piscan_pb::DemodRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::piscan_pb::DemodRequest >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
