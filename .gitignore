@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+/cpp
+/py
+/python
+
+*.h
+*.cc
+*.py
