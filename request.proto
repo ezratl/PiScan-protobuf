@@ -8,6 +8,7 @@ message GeneralRequest {
 	enum RequestType {
 		SCANNER_CONTEXT = 0;
 		DEMOD_CONTEXT = 1;
+		SYSTEM_INFO = 2;
 	}
 
 	RequestType type = 2;
@@ -23,7 +24,9 @@ message ScannerStateRequest {
 	}
 
 	NewState state = 2;
-	uint64 manFreq = 3;
+	int64 manFreq = 3;
+	string manModulation = 4;
+	repeated int32 holdIndex = 5;
 }
 
 message DemodRequest {

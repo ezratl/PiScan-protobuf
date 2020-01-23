@@ -13,21 +13,28 @@ message ClientToServer {
 	}
 
 	Type type = 1;
-	GeneralRequest generalRequest = 2;
-	ScannerStateRequest scanStateRequest = 3;
-	DemodRequest demodRequest = 4;
+	oneof content {
+		GeneralRequest generalRequest = 2;
+		ScannerStateRequest scanStateRequest = 3;
+		DemodRequest demodRequest = 4;
+	}
 }
 
 message ServerToClient {
 	enum Type {
-		SCANNER_CONTEXT = 0;
-		DEMOD_CONTEXT = 1;
-		GENERAL_MESSAGE = 2;
+		REQUEST_RESPONSE = 0;
+		SCANNER_CONTEXT = 1;
+		DEMOD_CONTEXT = 2;
+		GENERAL_MESSAGE = 3;
 	}
 
-	Type type = 1;
-	ScannerContext scannerContext = 2;
-	DemodContext demodContext = 3;
-	GeneralMessage generalMessage = 4;
+	int32 handle = 1;
+	Type type = 2;
+	oneof content {
+		ScannerContext scannerContext = 3;
+		DemodContext demodContext = 4;
+		GeneralMessage generalMessage = 5;
+		SystemInfo systemInfo = 6;
+	}
 }
 

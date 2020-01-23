@@ -2,6 +2,19 @@ syntax = "proto3";
 
 package piscan_pb;
 
+message Entry {
+	uint64 freq = 1;
+	string systemTag = 2;
+	string entryTag = 3;
+	string modulation = 4;
+	string entryIndex = 5;
+	int32 lockoutDuration = 6;
+}
+
+message SignalLevel {
+	int32 level = 1;
+}
+
 message ScannerContext {
 	enum State {
 		INVAL = 0;
@@ -11,11 +24,8 @@ message ScannerContext {
 	}
 	
 	State state = 1;
-	uint64 freq = 2;
-	string systemTag = 3;
-	string entryTag = 4;
-	string modulation = 5;
-	string entryIndex = 6;
+	Entry entryData = 2;
+	SignalLevel signalLevel = 3;
 }
 
 message DemodContext {
@@ -28,8 +38,17 @@ message GeneralMessage {
 		INFO = 0;
 		WARNING = 1;
 		ERROR = 2;
+		CONSOLE = 3;
 	}
 
 	Type type = 1;
 	string content = 2;
+}
+
+message SystemInfo {
+	string version = 1;
+	int32 build = 2;
+	int32 squelchScaleMin = 3;
+	int32 squelchScaleMax = 4;
+	repeated string supportedModulations = 5;
 }
