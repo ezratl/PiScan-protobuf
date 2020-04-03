@@ -8,7 +8,15 @@ message Entry {
 	string entryTag = 3;
 	string modulation = 4;
 	string entryIndex = 5;
-	int32 lockoutDuration = 6;
+	enum Lockout {
+		NONE = 0;		// unlocked
+		TIMED = 1;	// timed expiration lockout
+		SESSION = 2;	// locked until application stops
+		PERSISTENT = 3;	// locked until manually unlocked
+	}
+	Lockout lockoutType = 6;
+	int32 lockoutDuration = 7;	// duration of temporary lockout
+	int32 delay = 8;			// scan delay in milliseconds
 }
 
 message SignalLevel {
@@ -25,7 +33,7 @@ message ScannerContext {
 	
 	State state = 1;
 	Entry entryData = 2;
-	SignalLevel signalLevel = 3;
+	bool manualHold = 3;
 }
 
 message DemodContext {
@@ -38,7 +46,7 @@ message GeneralMessage {
 		INFO = 0;
 		WARNING = 1;
 		ERROR = 2;
-		CONSOLE = 3;
+		CONSOLE = 3;	// for receiving log messages
 	}
 
 	Type type = 1;
